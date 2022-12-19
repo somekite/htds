@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>list all services ubuntu Archives - How To Do Stuff</title>
+	<atom:link href="/tag/list-all-services-ubuntu/feed/" rel="self" type="application/rss+xml" />
+	<link>/tag/list-all-services-ubuntu/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Thu, 24 Nov 2022 10:43:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>list all services ubuntu Archives - How To Do Stuff</title>
+	<link>/tag/list-all-services-ubuntu/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to list services in Ubuntu 22.04 / 20.04 / 18.04 : Command guide</title>
+		<link>/how-to-list-all-services-in-ubuntu-20-22/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-list-all-services-in-ubuntu-20-22</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 02 Jun 2021 00:39:17 +0000</pubDate>
+				<category><![CDATA[Command Help]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Command]]></category>
+		<category><![CDATA[Ubuntu Help]]></category>
+		<category><![CDATA[Ubuntu services]]></category>
+		<category><![CDATA[linux running services]]></category>
+		<category><![CDATA[Linux Services]]></category>
+		<category><![CDATA[List all running services on ubuntu]]></category>
+		<category><![CDATA[list all services ubuntu]]></category>
+		<category><![CDATA[list of running services ubuntu]]></category>
+		<category><![CDATA[List running services in ubuntu]]></category>
+		<category><![CDATA[List running services on Linux]]></category>
+		<category><![CDATA[List services command Ubuntu 22.04]]></category>
+		<category><![CDATA[list services ubuntu 20.04]]></category>
+		<category><![CDATA[lsb_release]]></category>
+		<category><![CDATA[show running services ubuntu]]></category>
+		<category><![CDATA[Ubuntu 18.04]]></category>
+		<category><![CDATA[ubuntu 20 list services]]></category>
+		<category><![CDATA[Ubuntu 20.04]]></category>
+		<category><![CDATA[ubuntu 20.04 list services]]></category>
+		<category><![CDATA[Ubuntu 22 services list]]></category>
+		<category><![CDATA[Ubuntu 22.04]]></category>
+		<category><![CDATA[Ubuntu 22.04 list services]]></category>
+		<category><![CDATA[Ubuntu FAQ]]></category>
+		<category><![CDATA[ubuntu list active services]]></category>
+		<category><![CDATA[Ubuntu list services command]]></category>
+		<category><![CDATA[Ubuntu Service Command]]></category>
+		<category><![CDATA[ubuntu service list]]></category>
+		<category><![CDATA[ubuntu service status all]]></category>
+		<category><![CDATA[Ubuntu Services]]></category>
+		<category><![CDATA[Ubuntu services list command]]></category>
+		<category><![CDATA[ubuntu version]]></category>
+		<category><![CDATA[view all services ubuntu]]></category>
+		<guid isPermaLink="false">/?p=5</guid>
+
+					<description><![CDATA[<p>In this tutorial we are going to learn how to list services in Ubuntu 22 / Ubuntu 20 / Ubuntu 18 using the command line interface. We will see how we can list running services and services that are not running. Ubuntu list all services systemctl, systemctl list all services, List running services in Ubuntu &#8230; <a href="/how-to-list-all-services-in-ubuntu-20-22/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-list-all-services-in-ubuntu-20-22/">How to list services in Ubuntu 22.04 / 20.04 / 18.04 : Command guide</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p><img decoding="async" class="aligncenter size-full wp-image-170" src="/wp-content/uploads/2020/06/List-services-in-linux.png" alt="" width="746" height="396" srcset="/wp-content/uploads/2020/06/List-services-in-linux.png 746w, /wp-content/uploads/2020/06/List-services-in-linux-300x159.png 300w" sizes="(max-width: 746px) 100vw, 746px" /></p>
+<p>In this tutorial we are going to learn how to list services in Ubuntu 22 / Ubuntu 20 / Ubuntu 18 using the command line interface. We will see how we can list running services and services that are not running.</p>
+<p><strong>Ubuntu list all services systemctl</strong>, <strong>systemctl list all services, List running services in Ubuntu 22 / Ubuntu 20 / Ubuntu 18</strong></p>
+<p><a href="/category/ubuntu/">Ubuntu</a>: How do I list all of the services on my Ubuntu 22.04 or <a href="/tag/ubuntu-20-04/">Ubuntu 20.04</a> or <a href="/tag/ubuntu-18-04/">Ubuntu 18.04</a> system from the <a href="/category/linux/">Linux</a> command line / Terminal ?  How to list running services on Ubuntu 22.04 / Ubuntu 20.04 ?</p>
+
+
+
+<p>Answer: Use this command:</p>
+
+
+
+<pre class="wp-block-code"><code>service --status-all</code></pre>
+
+
+
+<p>Here’s an example of what this looks like on an <a href="/tag/ubuntu-18-04/">Ubuntu 18.04</a> LTS system:</p>
+
+
+
+<h3 id="toc_0">The meaning of the Ubuntu <code>service</code> command output</h3>
+
+
+
+<p>From the Ubuntu Linux <code>service</code> man page:</p>
+
+
+
+<p><code>service --status-all</code> runs all init scripts, in alphabetical order, with the <code>status</code> command. The status is:</p>
+
+
+
+<ul>
+<li><code>[ + ]</code> running services</li>
+<li><code>[ - ]</code> stopped services</li>
+<li><code>[ ? ]</code> services without a &#8216;status&#8217; command</li>
+</ul>
+
+
+
+<p>This option only calls status for sysvinit jobs; upstart jobs can be queried in a similar manner with <code>initctl list</code>.</p>
+<p>&nbsp;</p>
+
+
+
+<h2 id="toc_1">How to show the Ubuntu version</h2>
+
+
+
+<p>In a slightly-related note, you can show your Ubuntu version information with the <code>lsb_release -a</code> command:</p>
+
+
+
+<pre class="wp-block-code"><code>root&gt; lsb_release -a<br />No LSB modules are available.<br />Distributor ID: Ubuntu<br />Description: Ubuntu 20.04.5 LTS<br />Release: 20.04<br />Codename: focal
+</code></pre>
+<p>Also read :</p>
+<ul>
+<li><a href="/change-keyring-password-in-ubuntu/">How to change keyring password in Ubuntu</a></li>
+<li><a href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04/" target="_blank" rel="noopener">How To Install Linux, Nginx, MySQL, PHP (LEMP stack)</a></li>
+</ul>
+<p>The post <a rel="nofollow" href="/how-to-list-all-services-in-ubuntu-20-22/">How to list services in Ubuntu 22.04 / 20.04 / 18.04 : Command guide</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

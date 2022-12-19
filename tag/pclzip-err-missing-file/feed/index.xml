@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PCLZIP ERR MISSING FILE Archives - How To Do Stuff</title>
+	<atom:link href="/tag/pclzip-err-missing-file/feed/" rel="self" type="application/rss+xml" />
+	<link>/tag/pclzip-err-missing-file/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Thu, 03 Nov 2022 09:36:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>PCLZIP ERR MISSING FILE Archives - How To Do Stuff</title>
+	<link>/tag/pclzip-err-missing-file/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>WordPress PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘/{plugin..}.tmp’ : error</title>
+		<link>/fix-wordpress-missing-archive-file-or-download-failed/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fix-wordpress-missing-archive-file-or-download-failed</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 24 Mar 2021 11:01:10 +0000</pubDate>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[Wordpress error]]></category>
+		<category><![CDATA[download failed error]]></category>
+		<category><![CDATA[Missing archive file]]></category>
+		<category><![CDATA[Missing file]]></category>
+		<category><![CDATA[PCLZIP ERR MISSING FILE]]></category>
+		<category><![CDATA[PCLZIP_ERR_MISSING_FILE]]></category>
+		<category><![CDATA[Windows hosting]]></category>
+		<guid isPermaLink="false">/?p=143</guid>
+
+					<description><![CDATA[<p>How to fix PCLZIP_ERR_MISSING_FILE (-4) Missing file &#8216;/{somefile.tmp}&#8217; error when updating plugin in WordPress  This solution is based on this WordPress.org thread. Problem : When you try to update WordPress or install plugins, the downloader / installer page pops up, the compressed file is downloaded to your server, but installation fails because of this error: PCLZIP_ERR_MISSING_FILE &#8230; <a href="/fix-wordpress-missing-archive-file-or-download-failed/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/fix-wordpress-missing-archive-file-or-download-failed/">WordPress PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘/{plugin..}.tmp’ : error</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><strong>How to fix PCLZIP_ERR_MISSING_FILE (-4) Missing file &#8216;/{somefile.tmp}&#8217; error when updating plugin in WordPress </strong><br />
+<strong><br />
+</strong>This solution is based on this <a href="https://wordpress.org/support/topic/pclzip_err_missing_file-4/" data-original-attrs="{&quot;data-original-href&quot;:&quot;http://wordpress.org/support/topic/pclzip_err_missing_file-4-missing-archive-file-cwindowstempwordpress-3&quot;}">WordPress.org thread</a>.<br />
+<strong><br />
+</strong><strong>Problem :</strong><br />
+When you try to update WordPress or install plugins, the downloader / installer page pops up, the compressed file is downloaded to your server, but installation fails because of this error: PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘C:\Windows\TEMP/{whatever you were installing}.tmp’</p>
+<p><strong>Solution</strong> :<br />
+You need to access the files on your server via FTP. If you haven’t done this before, there are tutorials out there.<br />
+Short version: find the FTP access details for your server, and grab FileZilla FTP Client. Or if your hosting provides a File Manager utility, use that.<br />
+On your server, navigate to the /wp-content folder.<br />
+Create a new folder inside it called TEMP.<br />
+Download /wp-config.php from your server to your computer.<br />
+Open it up in a text editor, and beneath<br />
+if ( !defined(&#8216;ABSPATH&#8217;) ) define(&#8216;ABSPATH&#8217;, dirname(__FILE__) . &#8216;/&#8217;);<br />
+add the line<br />
+define(&#8216;WP_TEMP_DIR&#8217;, ABSPATH . &#8216;wp-content/TEMP&#8217;);<br />
+then save wp-config.php.<br />
+Upload it to your server again.<br />
+Try updating WordPress or installing a plugin. It should work now.</p>
+<p><strong>The other solution is not to use Windows hosting!</strong><br />
+<strong><br />
+</strong><b>For more details, see <a href="https://howtofixthe.blogspot.com/2020/02/pclzip-err-missing-file-4-missing-archive-file-plugin-tmp-error-in-wordpress.html" data-original-attrs="{&quot;data-original-href&quot;:&quot;https://howfixwp.wordpress.com/2017/05/26/pclzip_err_missing_file-4-missing-archive-file-plugin-tmp-error-in-wordpress/&quot;,&quot;target&quot;:&quot;_blank&quot;}">HowToFix blog</a></b></p>
+<p>Also read : <a href="/how-to-fix-500-internal-server-error-in-wordpress/" target="_blank" rel="noopener">How to fix the 500 Internal Server Error in wordpress</a></p>
+<p>The post <a rel="nofollow" href="/fix-wordpress-missing-archive-file-or-download-failed/">WordPress PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘/{plugin..}.tmp’ : error</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

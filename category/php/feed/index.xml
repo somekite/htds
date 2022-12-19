@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>PHP Archives - How To Do Stuff</title>
+	<atom:link href="/category/php/feed/" rel="self" type="application/rss+xml" />
+	<link>/category/php/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Mon, 28 Nov 2022 12:16:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>PHP Archives - How To Do Stuff</title>
+	<link>/category/php/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to disable eval function in PHP</title>
+		<link>/how-to-disable-eval-function-in-php/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-disable-eval-function-in-php</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 13 Apr 2022 17:43:08 +0000</pubDate>
+				<category><![CDATA[Application Security]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<category><![CDATA[Disable dangerous php functions]]></category>
+		<category><![CDATA[Disable eval]]></category>
+		<category><![CDATA[Disable eval function php]]></category>
+		<category><![CDATA[Disable eval using Suhosin]]></category>
+		<category><![CDATA[Disable php eval function]]></category>
+		<category><![CDATA[disable_functions]]></category>
+		<category><![CDATA[Eval function disable]]></category>
+		<category><![CDATA[Eval php function]]></category>
+		<category><![CDATA[How to install Suhosin php extension]]></category>
+		<category><![CDATA[Install Suhosin]]></category>
+		<category><![CDATA[PHP application system]]></category>
+		<category><![CDATA[php install Suhosin extension]]></category>
+		<category><![CDATA[PHP security]]></category>
+		<category><![CDATA[Prohibit eval function]]></category>
+		<category><![CDATA[Protect php application]]></category>
+		<category><![CDATA[Protect php web application]]></category>
+		<category><![CDATA[Runtime protection]]></category>
+		<category><![CDATA[Session protection]]></category>
+		<category><![CDATA[Suhosin]]></category>
+		<category><![CDATA[Suhosin installation steps]]></category>
+		<category><![CDATA[Suhosin php extension]]></category>
+		<category><![CDATA[suhosin.executor.disable_eval]]></category>
+		<category><![CDATA[Trojan invasion]]></category>
+		<category><![CDATA[Web server protection]]></category>
+		<category><![CDATA[Website security]]></category>
+		<category><![CDATA[Wordpress security]]></category>
+		<guid isPermaLink="false">/?p=925</guid>
+
+					<description><![CDATA[<p>How to disable eval in php.ini to Protect php web application The eval function in php is not a system component function, therefor we cannot disable it by using disable_functions in php. ini. But eval () for php security has a great lethality, so in order to prevent similar to the following 1 sentence Trojan &#8230; <a href="/how-to-disable-eval-function-in-php/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-disable-eval-function-in-php/">How to disable eval function in PHP</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter size-full wp-image-932" src="/wp-content/uploads/2022/04/how-to-disable-eval-function-in-php.png" alt="How to disable eval function in php" width="770" height="515" srcset="/wp-content/uploads/2022/04/how-to-disable-eval-function-in-php.png 770w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-300x201.png 300w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-768x514.png 768w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-640x428.png 640w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-75x50.png 75w" sizes="(max-width: 770px) 100vw, 770px" /></p>
+<h3>How to disable eval in php.ini to Protect php web application</h3>
+<p>The <a href="/tag/eval-php-function/"><strong>eval</strong> function in php</a> is not a system component function, therefor we cannot <a href="/tag/disable-eval/"><strong>disable</strong></a> it by using disable_functions in php. ini.</p>
+<p>But eval () for <a href="/tag/php-security/"><strong>php</strong> security</a> has a great lethality, so in order to prevent similar to the following 1 sentence <a href="/tag/trojan-invasion/">Trojan invasion</a>, need to <a href="/tag/prohibit-eval-function/">prohibit</a>! Also, it is recommended to disable eval function in php for web application security and protect it from malware and trojan attacks. Let see the steps to <a href="/tag/disable-dangerous-php-functions/">disable dangerous php function</a> such as eval.</p>
+<p>&nbsp;</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token global">$_POST</span><span class="token punctuation">[</span>cmd<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token delimiter important">?&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Use example of eval ():</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token variable">$string</span> <span class="token operator">=</span> <span class="token single-quoted-string string">' Cup '</span><span class="token punctuation">;</span>
+<span class="token variable">$name</span> <span class="token operator">=</span> <span class="token single-quoted-string string">' Coffee '</span><span class="token punctuation">;</span>
+<span class="token variable">$str</span> <span class="token operator">=</span> <span class="token single-quoted-string string">' This  $string  Installed in  $name.&lt;br&gt;'</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$str</span><span class="token punctuation">;</span>
+<span class="token function">eval</span><span class="token punctuation">(</span> <span class="token double-quoted-string string">"<span class="token interpolation"><span class="token variable">$str</span></span> = "</span><span class="token variable">$str</span><span class="token double-quoted-string string">";"</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$str</span><span class="token punctuation">;</span>
+<span class="token delimiter important">?&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>The return value of this example is:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"> This  <span class="token variable">$string</span>  Installed in  <span class="token variable">$name</span><span class="token punctuation">.</span>
+ This   Cup   Installed in   Coffee <span class="token punctuation">.</span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Or more advanced is:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token variable">$str</span><span class="token operator">=</span><span class="token double-quoted-string string">"hello world"</span><span class="token punctuation">;</span> <span class="token comment">// For example, this is the result of meta-calculation </span>
+<span class="token variable">$code</span><span class="token operator">=</span> <span class="token double-quoted-string string">"print('n<span class="token interpolation"><span class="token variable">$strn</span></span>');"</span><span class="token punctuation">;</span><span class="token comment">// This is stored in the database php Code </span>
+<span class="token keyword">echo</span><span class="token punctuation">(</span><span class="token variable">$code</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Print the combined command ,str The string has been replaced , Form 1 A complete php Command , But it will not be implemented </span>
+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token variable">$code</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Executed this order </span>
+<span class="token delimiter important">?&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item">For the example above, in eval, first the string is replaced, and then a complete assignment command is executed after the replacement.</div>
+</div>
+</div>
+<p>This kind of pony smashing the door needs to be banned! However, many people on the Internet say that using <a href="/tag/disable_functions/">disable_functions</a> to prohibit eval is wrong! In fact, eval () cannot be disabled with disable_functions in php. ini, because eval() is a language construct and not a function.</p>
+<p>eval is zend&#8217;s and is therefore not an PHP_FUNCTION function.</p>
+<h3>How does php ban eval?</h3>
+<p>If you want to disable eval, you can use <a href="/tag/suhosin-php-extension/">Suhosin</a>, an extension of php:<br />
+After installing Suhosin, enter Suhosin. so in php. ini, and add <a href="/tag/suhosin-executor-disable_eval/">suhosin. executor. disable_eval</a> = on!</p>
+<p>To sum up, the eval function of php cannot be disabled in php, so we have to use plug-ins!</p>
+<h3 class="title">Use Suhosin to protect PHP application system (disable eval)</h3>
+<p><a href="/tag/suhosin-php-extension/">Suhosin</a> is a <a href="/tag/web-server-protection/">protection</a> program. It was originally designed to protect servers and users from known or unknown defects in the PHP program and the PHP core. Suhosin has two independent parts, which can be used separately or in combination. The first part is a patch for the PHP core, which can resist buffer overflow or format string weakness; the second part is a powerful <strong>PHP extension</strong> that includes all other protection measures.</p>
+<h3>Download Suhosin php extension</h3>
+<p>Friends who use Gentoo linux or FreeBSD can find Suhosin in ports. Friends who use OpenSuSE linux, Mandriva Linux , and Debian Linux found Suhosin in the distribution package.</p>
+<p><a href="http://www.hardened-php.net/suhosin/download.html">http://www.hardened-php.net/suhosin/download.html</a></p>
+<h2>How to install Suhosin php extension</h2>
+<p>1) Download, the address has been given above</p>
+<p>2) Unzip and patch</p>
+<p># tar jxvf php-5.2.10.tar.bz2</p>
+<p># gunzip suhosin-patch-5.2.10-0.9.7.patch.gz</p>
+<p># cd php-5.2.10</p>
+<p># patch -p 1 -i ../suhosin-patch-5.2.10-0.9.7.patch</p>
+<p># ./configure &#8211;your-options</p>
+<p># make</p>
+<p># make install</p>
+<p>Install extension</p>
+<p># tar zxvf suhosin-0.9.31.tgz</p>
+<p># cd subosin-0.9.31</p>
+<p># phpize</p>
+<p># ./configure –with-php-config=/usr/local/php/bin/php-config (this path is set according to your actual situation)</p>
+<p># make</p>
+<p># make install</p>
+<p>Then edit php.ini and add extension=suhosin.so</p>
+<h3>Features of Suhosin extension</h3>
+<p><strong>1) Engine protection</strong> (patches only)</p>
+<ol>
+<li>Protect internal memory management against buffer overflow</li>
+<li>Prevent Zend hash table from being destroyed</li>
+<li>Prevent Zend link list from being destroyed</li>
+<li>Protect PHP core and its extensions against format string weaknesses</li>
+<li>Some libc realpath() errors</li>
+</ol>
+<p><strong>2) Various characteristics</strong></p>
+<ol>
+<li>Simulator protection mode</li>
+<li>Add two functions sha256() and sha256_file() to the PHP core</li>
+<li>All platforms, add CRYPT_BLOWFISH to the function crypt()</li>
+<li>Turn on transparent protection of phpinfo() page</li>
+<li>SQL<a href="http://www.2cto.com/database/" target="_blank" rel="nofollow noopener noreferrer">database</a> user protection (test phase)</li>
+</ol>
+<p><strong>3) Runtime protection</strong></p>
+<ol>
+<li> <a href="http://www.2cto.com/article/jiami/" target="_blank" rel="nofollow noopener noreferrer">encryption</a>cookies</li>
+<li>Prevent different kinds of inclusion <a href="http://www.2cto.com/" target="_blank" rel="nofollow noopener noreferrer">vulnerabilities</a> (remote URL inclusion is not allowed (black/white list); uploaded files are not allowed; prevent directory traversal attacks)</li>
+<li>Allow prohibiting preg_replace()/e modification options</li>
+<li>Allow to prohibit eval() function</li>
+<li>Prevent infinite recursion by configuring a maximum execution depth</li>
+<li>Support each vhost configuration black and white list</li>
+<li>Provide a separate black and white list of functions for code execution</li>
+<li>Prevent HTTP response splitting vulnerability</li>
+<li>Prevent scripts from controlling the memory_limit option</li>
+<li>Protect PHP&#8217;s superglobals, for the function extract() import_request_vars()</li>
+<li>Prevent new line attacks of mail() function</li>
+<li>Prevent preg_replace() attacks</li>
+</ol>
+<p><strong>4) Session protection</strong></p>
+<ol>
+<li>Encrypted session data</li>
+<li>Prevent session from being hijacked</li>
+<li>Prevent long session id</li>
+<li>Prevent malicious session id</li>
+</ol>
+<p><strong>5) Filter characteristics</strong></p>
+<p><strong>6) Log characteristics</strong> (omitted)</p>
+<p>Refer to <a href="http://www.hardened-php.net/suhosin/a_feature_list.html" target="_blank" rel="nofollow noopener noreferrer"><u>http://www.hardened-php.net/suhosin/a_feature_list.html</u></a></p>
+<p>&nbsp;</p>
+<p>Also read:</p>
+<p><a class="row-title" href="/how-to-sort-trello-cards-by-date/" aria-label="“How to sort Trello Cards by date created” (Edit)">How to sort Trello Cards List by date</a></p>
+<p>The post <a rel="nofollow" href="/how-to-disable-eval-function-in-php/">How to disable eval function in PHP</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to fix the 500 Internal Server Error in wordpress</title>
+		<link>/how-to-fix-500-internal-server-error-in-wordpress/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-fix-500-internal-server-error-in-wordpress</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Sat, 27 Mar 2021 10:25:18 +0000</pubDate>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Web Server]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[500 Internal Server Error]]></category>
+		<category><![CDATA[Corrupted htaccess]]></category>
+		<category><![CDATA[Corrupted plugin]]></category>
+		<category><![CDATA[Exhausted PHP memory limit]]></category>
+		<category><![CDATA[fix 500 Internal Server Error]]></category>
+		<category><![CDATA[htaccess]]></category>
+		<category><![CDATA[HTTP Error 500]]></category>
+		<category><![CDATA[HTTP error codes and status codes]]></category>
+		<category><![CDATA[Internal Server Error]]></category>
+		<category><![CDATA[Temporary Error 500]]></category>
+		<category><![CDATA[wordpress error]]></category>
+		<category><![CDATA[wordpress permalink refresh]]></category>
+		<category><![CDATA[wordpress refresh permalinks]]></category>
+		<category><![CDATA[wordpress tutorial]]></category>
+		<guid isPermaLink="false">/?p=131</guid>
+
+					<description><![CDATA[<p>Internal server errors in WordPress are the worst (aka. http error 500), compared to other HTTP error codes and status codes. The WordPress websites often encounters an error called 500 internal server error in wordpress. There are several potential causes. Causes: Exhausted PHP memory limit Corrupted plugin functions Corrupted theme functions Corrupted .htaccess What Is the &#8230; <a href="/how-to-fix-500-internal-server-error-in-wordpress/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-fix-500-internal-server-error-in-wordpress/">How to fix the 500 Internal Server Error in wordpress</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter wp-image-139 size-full" title="Fix 500 internal server error wordpress" src="/wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress.jpg" alt="Fix 500 internal server error wordpress" width="1150" height="550" srcset="/wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress.jpg 1150w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-300x143.jpg 300w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-1024x490.jpg 1024w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-768x367.jpg 768w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-800x383.jpg 800w" sizes="(max-width: 1150px) 100vw, 1150px" /></p>
+<p>Internal server errors in WordPress are the worst (aka. <a href="/tag/http-error-500/">http error 500</a>), compared to other HTTP error codes and status codes.</p>
+<p>The WordPress websites often encounters an error called 500 internal server error in <a href="/category/wordpress/">wordpress</a>. There are several potential causes.</p>
+<h3>Causes:</h3>
+<ul>
+<li>Exhausted PHP memory limit</li>
+<li>Corrupted plugin functions</li>
+<li>Corrupted theme functions</li>
+<li>Corrupted .htaccess</li>
+</ul>
+<h2>What Is the 500 Internal Server Error?</h2>
+<p>A fairly general HTTP status code, the 500 Internal Server Error indicates that something unexpected has happened on your website’s server. If you see this error message, there’s no need to panic. The problem, whatever it may be, is with your website’s servers, not your computer.</p>
+<p>Here’s the catch though, the server can’t tell you what the exact problem is. It only shows the response code 500.</p>
+<h3><span style="text-decoration: underline;">Solutions to 500 Internal Server Error</span></h3>
+<h3>Solution #1<strong>. Increase the memory limit</strong></h3>
+<p>Follow the same steps to increase the memory limit as mentioned in the previous step. The steps to increase memory limit can be found at <a href="https://howtofixthe.blogspot.com/2020/02/500-Internal-Server-Error-wordpress.html" target="_blank" rel="noopener">HowToFix Blog</a>.</p>
+<h3>Solution #<strong>2. Edit .htaccess file</strong></h3>
+<p>Edit your .htaccess file, if a corrupted .htaccess file caused this problem. Open your .htaccess file from the FTP or file manager and rename it with .htaccess old. Refresh your website and see if the problem persists. If this fixes the problem, click on settings &gt; permalinks and hit save changes to reset .htaccess.</p>
+<h3>Solution #3<strong>. Deactivate all the plugins</strong></h3>
+<p>If changing your .htaccess file did not have any impact on the problem, you might want to check your plugins. Deactivate all your plugins by clicking on plugins ? installed plugins. Choose “deactivate” from the “bulk action” drop down and hit apply. It will automatically deactivate all your plugins. Now go to your website, refresh it and check if the error is gone. If so, activate your plugins one by one and see which plugin has caused the problem.</p>
+<h3>Solution #<strong>4. Replace wp-admin and wp-includes folders</strong></h3>
+<p>If nothing worked, try replacing your wp-includes and wp-admin folders with fresh copies from a WordPress install. Save them and upload. Refresh the browser and see if the problem is resolved.</p>
+<h2>Naming Variants for 500 Internal Server Errors</h2>
+<p>There are actually quite a few names or phrases that can indicate you’re dealing with a 500 internal server error. Depending on your web server or the particular problem, you could receive any of the following variants:</p>
+<ul>
+<li>500 Internal Server Error</li>
+<li>Internal Server Error</li>
+<li>Error 500</li>
+<li>HTTP Error 500</li>
+<li>HTTP Error 500 – Internal Server Error</li>
+<li>Temporary Error (500)</li>
+</ul>
+<p>The post <a rel="nofollow" href="/how-to-fix-500-internal-server-error-in-wordpress/">How to fix the 500 Internal Server Error in wordpress</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

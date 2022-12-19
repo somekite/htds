@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Install Suhosin Archives - How To Do Stuff</title>
+	<atom:link href="/tag/install-suhosin/feed/" rel="self" type="application/rss+xml" />
+	<link>/tag/install-suhosin/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Mon, 28 Nov 2022 12:16:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Install Suhosin Archives - How To Do Stuff</title>
+	<link>/tag/install-suhosin/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to disable eval function in PHP</title>
+		<link>/how-to-disable-eval-function-in-php/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-disable-eval-function-in-php</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 13 Apr 2022 17:43:08 +0000</pubDate>
+				<category><![CDATA[Application Security]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<category><![CDATA[Disable dangerous php functions]]></category>
+		<category><![CDATA[Disable eval]]></category>
+		<category><![CDATA[Disable eval function php]]></category>
+		<category><![CDATA[Disable eval using Suhosin]]></category>
+		<category><![CDATA[Disable php eval function]]></category>
+		<category><![CDATA[disable_functions]]></category>
+		<category><![CDATA[Eval function disable]]></category>
+		<category><![CDATA[Eval php function]]></category>
+		<category><![CDATA[How to install Suhosin php extension]]></category>
+		<category><![CDATA[Install Suhosin]]></category>
+		<category><![CDATA[PHP application system]]></category>
+		<category><![CDATA[php install Suhosin extension]]></category>
+		<category><![CDATA[PHP security]]></category>
+		<category><![CDATA[Prohibit eval function]]></category>
+		<category><![CDATA[Protect php application]]></category>
+		<category><![CDATA[Protect php web application]]></category>
+		<category><![CDATA[Runtime protection]]></category>
+		<category><![CDATA[Session protection]]></category>
+		<category><![CDATA[Suhosin]]></category>
+		<category><![CDATA[Suhosin installation steps]]></category>
+		<category><![CDATA[Suhosin php extension]]></category>
+		<category><![CDATA[suhosin.executor.disable_eval]]></category>
+		<category><![CDATA[Trojan invasion]]></category>
+		<category><![CDATA[Web server protection]]></category>
+		<category><![CDATA[Website security]]></category>
+		<category><![CDATA[Wordpress security]]></category>
+		<guid isPermaLink="false">/?p=925</guid>
+
+					<description><![CDATA[<p>How to disable eval in php.ini to Protect php web application The eval function in php is not a system component function, therefor we cannot disable it by using disable_functions in php. ini. But eval () for php security has a great lethality, so in order to prevent similar to the following 1 sentence Trojan &#8230; <a href="/how-to-disable-eval-function-in-php/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-disable-eval-function-in-php/">How to disable eval function in PHP</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter size-full wp-image-932" src="/wp-content/uploads/2022/04/how-to-disable-eval-function-in-php.png" alt="How to disable eval function in php" width="770" height="515" srcset="/wp-content/uploads/2022/04/how-to-disable-eval-function-in-php.png 770w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-300x201.png 300w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-768x514.png 768w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-640x428.png 640w, /wp-content/uploads/2022/04/how-to-disable-eval-function-in-php-75x50.png 75w" sizes="(max-width: 770px) 100vw, 770px" /></p>
+<h3>How to disable eval in php.ini to Protect php web application</h3>
+<p>The <a href="/tag/eval-php-function/"><strong>eval</strong> function in php</a> is not a system component function, therefor we cannot <a href="/tag/disable-eval/"><strong>disable</strong></a> it by using disable_functions in php. ini.</p>
+<p>But eval () for <a href="/tag/php-security/"><strong>php</strong> security</a> has a great lethality, so in order to prevent similar to the following 1 sentence <a href="/tag/trojan-invasion/">Trojan invasion</a>, need to <a href="/tag/prohibit-eval-function/">prohibit</a>! Also, it is recommended to disable eval function in php for web application security and protect it from malware and trojan attacks. Let see the steps to <a href="/tag/disable-dangerous-php-functions/">disable dangerous php function</a> such as eval.</p>
+<p>&nbsp;</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span> <span class="token function">eval</span><span class="token punctuation">(</span><span class="token global">$_POST</span><span class="token punctuation">[</span>cmd<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token delimiter important">?&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Use example of eval ():</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token variable">$string</span> <span class="token operator">=</span> <span class="token single-quoted-string string">' Cup '</span><span class="token punctuation">;</span>
+<span class="token variable">$name</span> <span class="token operator">=</span> <span class="token single-quoted-string string">' Coffee '</span><span class="token punctuation">;</span>
+<span class="token variable">$str</span> <span class="token operator">=</span> <span class="token single-quoted-string string">' This  $string  Installed in  $name.&lt;br&gt;'</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$str</span><span class="token punctuation">;</span>
+<span class="token function">eval</span><span class="token punctuation">(</span> <span class="token double-quoted-string string">"<span class="token interpolation"><span class="token variable">$str</span></span> = "</span><span class="token variable">$str</span><span class="token double-quoted-string string">";"</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">echo</span> <span class="token variable">$str</span><span class="token punctuation">;</span>
+<span class="token delimiter important">?&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>The return value of this example is:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"> This  <span class="token variable">$string</span>  Installed in  <span class="token variable">$name</span><span class="token punctuation">.</span>
+ This   Cup   Installed in   Coffee <span class="token punctuation">.</span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Or more advanced is:</p>
+<div class="code-toolbar">
+<pre class="line-numbers language-php"><code class=" language-php"><span class="token php language-php"><span class="token delimiter important">&lt;?php</span>
+<span class="token variable">$str</span><span class="token operator">=</span><span class="token double-quoted-string string">"hello world"</span><span class="token punctuation">;</span> <span class="token comment">// For example, this is the result of meta-calculation </span>
+<span class="token variable">$code</span><span class="token operator">=</span> <span class="token double-quoted-string string">"print('n<span class="token interpolation"><span class="token variable">$strn</span></span>');"</span><span class="token punctuation">;</span><span class="token comment">// This is stored in the database php Code </span>
+<span class="token keyword">echo</span><span class="token punctuation">(</span><span class="token variable">$code</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Print the combined command ,str The string has been replaced , Form 1 A complete php Command , But it will not be implemented </span>
+<span class="token function">eval</span><span class="token punctuation">(</span><span class="token variable">$code</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Executed this order </span>
+<span class="token delimiter important">?&gt;</span></span></code></pre>
+<div class="toolbar">
+<div class="toolbar-item">For the example above, in eval, first the string is replaced, and then a complete assignment command is executed after the replacement.</div>
+</div>
+</div>
+<p>This kind of pony smashing the door needs to be banned! However, many people on the Internet say that using <a href="/tag/disable_functions/">disable_functions</a> to prohibit eval is wrong! In fact, eval () cannot be disabled with disable_functions in php. ini, because eval() is a language construct and not a function.</p>
+<p>eval is zend&#8217;s and is therefore not an PHP_FUNCTION function.</p>
+<h3>How does php ban eval?</h3>
+<p>If you want to disable eval, you can use <a href="/tag/suhosin-php-extension/">Suhosin</a>, an extension of php:<br />
+After installing Suhosin, enter Suhosin. so in php. ini, and add <a href="/tag/suhosin-executor-disable_eval/">suhosin. executor. disable_eval</a> = on!</p>
+<p>To sum up, the eval function of php cannot be disabled in php, so we have to use plug-ins!</p>
+<h3 class="title">Use Suhosin to protect PHP application system (disable eval)</h3>
+<p><a href="/tag/suhosin-php-extension/">Suhosin</a> is a <a href="/tag/web-server-protection/">protection</a> program. It was originally designed to protect servers and users from known or unknown defects in the PHP program and the PHP core. Suhosin has two independent parts, which can be used separately or in combination. The first part is a patch for the PHP core, which can resist buffer overflow or format string weakness; the second part is a powerful <strong>PHP extension</strong> that includes all other protection measures.</p>
+<h3>Download Suhosin php extension</h3>
+<p>Friends who use Gentoo linux or FreeBSD can find Suhosin in ports. Friends who use OpenSuSE linux, Mandriva Linux , and Debian Linux found Suhosin in the distribution package.</p>
+<p><a href="http://www.hardened-php.net/suhosin/download.html">http://www.hardened-php.net/suhosin/download.html</a></p>
+<h2>How to install Suhosin php extension</h2>
+<p>1) Download, the address has been given above</p>
+<p>2) Unzip and patch</p>
+<p># tar jxvf php-5.2.10.tar.bz2</p>
+<p># gunzip suhosin-patch-5.2.10-0.9.7.patch.gz</p>
+<p># cd php-5.2.10</p>
+<p># patch -p 1 -i ../suhosin-patch-5.2.10-0.9.7.patch</p>
+<p># ./configure &#8211;your-options</p>
+<p># make</p>
+<p># make install</p>
+<p>Install extension</p>
+<p># tar zxvf suhosin-0.9.31.tgz</p>
+<p># cd subosin-0.9.31</p>
+<p># phpize</p>
+<p># ./configure –with-php-config=/usr/local/php/bin/php-config (this path is set according to your actual situation)</p>
+<p># make</p>
+<p># make install</p>
+<p>Then edit php.ini and add extension=suhosin.so</p>
+<h3>Features of Suhosin extension</h3>
+<p><strong>1) Engine protection</strong> (patches only)</p>
+<ol>
+<li>Protect internal memory management against buffer overflow</li>
+<li>Prevent Zend hash table from being destroyed</li>
+<li>Prevent Zend link list from being destroyed</li>
+<li>Protect PHP core and its extensions against format string weaknesses</li>
+<li>Some libc realpath() errors</li>
+</ol>
+<p><strong>2) Various characteristics</strong></p>
+<ol>
+<li>Simulator protection mode</li>
+<li>Add two functions sha256() and sha256_file() to the PHP core</li>
+<li>All platforms, add CRYPT_BLOWFISH to the function crypt()</li>
+<li>Turn on transparent protection of phpinfo() page</li>
+<li>SQL<a href="http://www.2cto.com/database/" target="_blank" rel="nofollow noopener noreferrer">database</a> user protection (test phase)</li>
+</ol>
+<p><strong>3) Runtime protection</strong></p>
+<ol>
+<li> <a href="http://www.2cto.com/article/jiami/" target="_blank" rel="nofollow noopener noreferrer">encryption</a>cookies</li>
+<li>Prevent different kinds of inclusion <a href="http://www.2cto.com/" target="_blank" rel="nofollow noopener noreferrer">vulnerabilities</a> (remote URL inclusion is not allowed (black/white list); uploaded files are not allowed; prevent directory traversal attacks)</li>
+<li>Allow prohibiting preg_replace()/e modification options</li>
+<li>Allow to prohibit eval() function</li>
+<li>Prevent infinite recursion by configuring a maximum execution depth</li>
+<li>Support each vhost configuration black and white list</li>
+<li>Provide a separate black and white list of functions for code execution</li>
+<li>Prevent HTTP response splitting vulnerability</li>
+<li>Prevent scripts from controlling the memory_limit option</li>
+<li>Protect PHP&#8217;s superglobals, for the function extract() import_request_vars()</li>
+<li>Prevent new line attacks of mail() function</li>
+<li>Prevent preg_replace() attacks</li>
+</ol>
+<p><strong>4) Session protection</strong></p>
+<ol>
+<li>Encrypted session data</li>
+<li>Prevent session from being hijacked</li>
+<li>Prevent long session id</li>
+<li>Prevent malicious session id</li>
+</ol>
+<p><strong>5) Filter characteristics</strong></p>
+<p><strong>6) Log characteristics</strong> (omitted)</p>
+<p>Refer to <a href="http://www.hardened-php.net/suhosin/a_feature_list.html" target="_blank" rel="nofollow noopener noreferrer"><u>http://www.hardened-php.net/suhosin/a_feature_list.html</u></a></p>
+<p>&nbsp;</p>
+<p>Also read:</p>
+<p><a class="row-title" href="/how-to-sort-trello-cards-by-date/" aria-label="“How to sort Trello Cards by date created” (Edit)">How to sort Trello Cards List by date</a></p>
+<p>The post <a rel="nofollow" href="/how-to-disable-eval-function-in-php/">How to disable eval function in PHP</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

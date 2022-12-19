@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress Archives - How To Do Stuff</title>
+	<atom:link href="/category/wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/category/wordpress/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Thu, 03 Nov 2022 09:42:20 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Wordpress Archives - How To Do Stuff</title>
+	<link>/category/wordpress/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to fix the 500 Internal Server Error in wordpress</title>
+		<link>/how-to-fix-500-internal-server-error-in-wordpress/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-fix-500-internal-server-error-in-wordpress</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Sat, 27 Mar 2021 10:25:18 +0000</pubDate>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Web Server]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[Wordpress Tutorial]]></category>
+		<category><![CDATA[500 Internal Server Error]]></category>
+		<category><![CDATA[Corrupted htaccess]]></category>
+		<category><![CDATA[Corrupted plugin]]></category>
+		<category><![CDATA[Exhausted PHP memory limit]]></category>
+		<category><![CDATA[fix 500 Internal Server Error]]></category>
+		<category><![CDATA[htaccess]]></category>
+		<category><![CDATA[HTTP Error 500]]></category>
+		<category><![CDATA[HTTP error codes and status codes]]></category>
+		<category><![CDATA[Internal Server Error]]></category>
+		<category><![CDATA[Temporary Error 500]]></category>
+		<category><![CDATA[wordpress error]]></category>
+		<category><![CDATA[wordpress permalink refresh]]></category>
+		<category><![CDATA[wordpress refresh permalinks]]></category>
+		<category><![CDATA[wordpress tutorial]]></category>
+		<guid isPermaLink="false">/?p=131</guid>
+
+					<description><![CDATA[<p>Internal server errors in WordPress are the worst (aka. http error 500), compared to other HTTP error codes and status codes. The WordPress websites often encounters an error called 500 internal server error in wordpress. There are several potential causes. Causes: Exhausted PHP memory limit Corrupted plugin functions Corrupted theme functions Corrupted .htaccess What Is the &#8230; <a href="/how-to-fix-500-internal-server-error-in-wordpress/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-fix-500-internal-server-error-in-wordpress/">How to fix the 500 Internal Server Error in wordpress</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter wp-image-139 size-full" title="Fix 500 internal server error wordpress" src="/wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress.jpg" alt="Fix 500 internal server error wordpress" width="1150" height="550" srcset="/wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress.jpg 1150w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-300x143.jpg 300w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-1024x490.jpg 1024w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-768x367.jpg 768w, /wp-content/uploads/2021/03/fix-500-internal-server-error-wordpress-800x383.jpg 800w" sizes="(max-width: 1150px) 100vw, 1150px" /></p>
+<p>Internal server errors in WordPress are the worst (aka. <a href="/tag/http-error-500/">http error 500</a>), compared to other HTTP error codes and status codes.</p>
+<p>The WordPress websites often encounters an error called 500 internal server error in <a href="/category/wordpress/">wordpress</a>. There are several potential causes.</p>
+<h3>Causes:</h3>
+<ul>
+<li>Exhausted PHP memory limit</li>
+<li>Corrupted plugin functions</li>
+<li>Corrupted theme functions</li>
+<li>Corrupted .htaccess</li>
+</ul>
+<h2>What Is the 500 Internal Server Error?</h2>
+<p>A fairly general HTTP status code, the 500 Internal Server Error indicates that something unexpected has happened on your website’s server. If you see this error message, there’s no need to panic. The problem, whatever it may be, is with your website’s servers, not your computer.</p>
+<p>Here’s the catch though, the server can’t tell you what the exact problem is. It only shows the response code 500.</p>
+<h3><span style="text-decoration: underline;">Solutions to 500 Internal Server Error</span></h3>
+<h3>Solution #1<strong>. Increase the memory limit</strong></h3>
+<p>Follow the same steps to increase the memory limit as mentioned in the previous step. The steps to increase memory limit can be found at <a href="https://howtofixthe.blogspot.com/2020/02/500-Internal-Server-Error-wordpress.html" target="_blank" rel="noopener">HowToFix Blog</a>.</p>
+<h3>Solution #<strong>2. Edit .htaccess file</strong></h3>
+<p>Edit your .htaccess file, if a corrupted .htaccess file caused this problem. Open your .htaccess file from the FTP or file manager and rename it with .htaccess old. Refresh your website and see if the problem persists. If this fixes the problem, click on settings &gt; permalinks and hit save changes to reset .htaccess.</p>
+<h3>Solution #3<strong>. Deactivate all the plugins</strong></h3>
+<p>If changing your .htaccess file did not have any impact on the problem, you might want to check your plugins. Deactivate all your plugins by clicking on plugins ? installed plugins. Choose “deactivate” from the “bulk action” drop down and hit apply. It will automatically deactivate all your plugins. Now go to your website, refresh it and check if the error is gone. If so, activate your plugins one by one and see which plugin has caused the problem.</p>
+<h3>Solution #<strong>4. Replace wp-admin and wp-includes folders</strong></h3>
+<p>If nothing worked, try replacing your wp-includes and wp-admin folders with fresh copies from a WordPress install. Save them and upload. Refresh the browser and see if the problem is resolved.</p>
+<h2>Naming Variants for 500 Internal Server Errors</h2>
+<p>There are actually quite a few names or phrases that can indicate you’re dealing with a 500 internal server error. Depending on your web server or the particular problem, you could receive any of the following variants:</p>
+<ul>
+<li>500 Internal Server Error</li>
+<li>Internal Server Error</li>
+<li>Error 500</li>
+<li>HTTP Error 500</li>
+<li>HTTP Error 500 – Internal Server Error</li>
+<li>Temporary Error (500)</li>
+</ul>
+<p>The post <a rel="nofollow" href="/how-to-fix-500-internal-server-error-in-wordpress/">How to fix the 500 Internal Server Error in wordpress</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>WordPress PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘/{plugin..}.tmp’ : error</title>
+		<link>/fix-wordpress-missing-archive-file-or-download-failed/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fix-wordpress-missing-archive-file-or-download-failed</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 24 Mar 2021 11:01:10 +0000</pubDate>
+				<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[Wordpress error]]></category>
+		<category><![CDATA[download failed error]]></category>
+		<category><![CDATA[Missing archive file]]></category>
+		<category><![CDATA[Missing file]]></category>
+		<category><![CDATA[PCLZIP ERR MISSING FILE]]></category>
+		<category><![CDATA[PCLZIP_ERR_MISSING_FILE]]></category>
+		<category><![CDATA[Windows hosting]]></category>
+		<guid isPermaLink="false">/?p=143</guid>
+
+					<description><![CDATA[<p>How to fix PCLZIP_ERR_MISSING_FILE (-4) Missing file &#8216;/{somefile.tmp}&#8217; error when updating plugin in WordPress  This solution is based on this WordPress.org thread. Problem : When you try to update WordPress or install plugins, the downloader / installer page pops up, the compressed file is downloaded to your server, but installation fails because of this error: PCLZIP_ERR_MISSING_FILE &#8230; <a href="/fix-wordpress-missing-archive-file-or-download-failed/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/fix-wordpress-missing-archive-file-or-download-failed/">WordPress PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘/{plugin..}.tmp’ : error</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><strong>How to fix PCLZIP_ERR_MISSING_FILE (-4) Missing file &#8216;/{somefile.tmp}&#8217; error when updating plugin in WordPress </strong><br />
+<strong><br />
+</strong>This solution is based on this <a href="https://wordpress.org/support/topic/pclzip_err_missing_file-4/" data-original-attrs="{&quot;data-original-href&quot;:&quot;http://wordpress.org/support/topic/pclzip_err_missing_file-4-missing-archive-file-cwindowstempwordpress-3&quot;}">WordPress.org thread</a>.<br />
+<strong><br />
+</strong><strong>Problem :</strong><br />
+When you try to update WordPress or install plugins, the downloader / installer page pops up, the compressed file is downloaded to your server, but installation fails because of this error: PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘C:\Windows\TEMP/{whatever you were installing}.tmp’</p>
+<p><strong>Solution</strong> :<br />
+You need to access the files on your server via FTP. If you haven’t done this before, there are tutorials out there.<br />
+Short version: find the FTP access details for your server, and grab FileZilla FTP Client. Or if your hosting provides a File Manager utility, use that.<br />
+On your server, navigate to the /wp-content folder.<br />
+Create a new folder inside it called TEMP.<br />
+Download /wp-config.php from your server to your computer.<br />
+Open it up in a text editor, and beneath<br />
+if ( !defined(&#8216;ABSPATH&#8217;) ) define(&#8216;ABSPATH&#8217;, dirname(__FILE__) . &#8216;/&#8217;);<br />
+add the line<br />
+define(&#8216;WP_TEMP_DIR&#8217;, ABSPATH . &#8216;wp-content/TEMP&#8217;);<br />
+then save wp-config.php.<br />
+Upload it to your server again.<br />
+Try updating WordPress or installing a plugin. It should work now.</p>
+<p><strong>The other solution is not to use Windows hosting!</strong><br />
+<strong><br />
+</strong><b>For more details, see <a href="https://howtofixthe.blogspot.com/2020/02/pclzip-err-missing-file-4-missing-archive-file-plugin-tmp-error-in-wordpress.html" data-original-attrs="{&quot;data-original-href&quot;:&quot;https://howfixwp.wordpress.com/2017/05/26/pclzip_err_missing_file-4-missing-archive-file-plugin-tmp-error-in-wordpress/&quot;,&quot;target&quot;:&quot;_blank&quot;}">HowToFix blog</a></b></p>
+<p>Also read : <a href="/how-to-fix-500-internal-server-error-in-wordpress/" target="_blank" rel="noopener">How to fix the 500 Internal Server Error in wordpress</a></p>
+<p>The post <a rel="nofollow" href="/fix-wordpress-missing-archive-file-or-download-failed/">WordPress PCLZIP_ERR_MISSING_FILE (-4) : Missing archive file ‘/{plugin..}.tmp’ : error</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Google Drive Archives - How To Do Stuff</title>
+	<atom:link href="/category/google-drive/feed/" rel="self" type="application/rss+xml" />
+	<link>/category/google-drive/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Thu, 03 Nov 2022 08:58:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Google Drive Archives - How To Do Stuff</title>
+	<link>/category/google-drive/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to fix/solve Error 403 The user has exceeded their google drive storage quota</title>
+		<link>/fix-error-403-the-user-has-exceeded-their-drive-storage-quota/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=fix-error-403-the-user-has-exceeded-their-drive-storage-quota</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Sat, 13 Mar 2021 12:32:59 +0000</pubDate>
+				<category><![CDATA[Cloud Storage]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Google Drive]]></category>
+		<category><![CDATA[drive storage quota]]></category>
+		<category><![CDATA[error 403]]></category>
+		<category><![CDATA[Error 403 solution]]></category>
+		<category><![CDATA[Fix Error 403]]></category>
+		<category><![CDATA[gdtot user rate limit exceeded]]></category>
+		<category><![CDATA[Google Drive Quota Error]]></category>
+		<category><![CDATA[Google drive quota exceeded]]></category>
+		<category><![CDATA[Google Drive storage]]></category>
+		<category><![CDATA[Google Drive Storage Limit]]></category>
+		<category><![CDATA[Google drive usage limit]]></category>
+		<category><![CDATA[how to download movies from gdtot link]]></category>
+		<category><![CDATA[user has exceeded their Drive storage quota]]></category>
+		<guid isPermaLink="false">/?p=848</guid>
+
+					<description><![CDATA[<p>One of the great things about Google Drive is that you can download, share, and collaborate on files with many people. However, once those teams get large or you’re trying to upload big files, you can run into usage limits. Those usage limits can lead to the error that your “Download quota is exceeded”. There &#8230; <a href="/fix-error-403-the-user-has-exceeded-their-drive-storage-quota/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/fix-error-403-the-user-has-exceeded-their-drive-storage-quota/">How to fix/solve Error 403 The user has exceeded their google drive storage quota</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter size-full wp-image-857" src="/wp-content/uploads/2022/03/google-drive.jpg" alt="How to fix error 403 google drive quota exceeded" width="680" height="380" srcset="/wp-content/uploads/2022/03/google-drive.jpg 680w, /wp-content/uploads/2022/03/google-drive-300x168.jpg 300w, /wp-content/uploads/2022/03/google-drive-640x358.jpg 640w" sizes="(max-width: 680px) 100vw, 680px" /></p>
+<p>One of the great things about <a href="/tag/google-drive/">Google Drive</a> is that you can download, share, and collaborate on files with many people. However, once those teams get large or you’re trying to upload big files, you can run into <a href="/tag/google-drive-usage-limit/">usage limits</a>. Those usage limits can lead to the error that your “<a href="/tag/google-drive-quota-exceeded/">Download quota is exceeded</a>”.</p>
+<p>There are a few workarounds to avoid this error, which we’ll cover in this article.</p>
+<h2>How to fix error : Google Drive storage quota has been exceeded</h2>
+<p>You can still download the file without triggering the “Download quota is exceeded” error. It just requires some extra steps to change the Google Drive account you’re downloading it from to your own.</p>
+<p>To do this, you’ll need to save a copy to your Google Drive account first.</p>
+<p>1. Make sure you’re already signed into your <a href="https://drive.google.com/">Google Drive account</a>.</p>
+<p>2. Select the link to the shared Google Drive file that you want to download.</p>
+<p>3. Save a copy of the file in a Google Drive folder you prefer by selecting <strong>File</strong> &gt; <strong>Make a copy</strong>.</p>
+<p>4. Browse to the folder where you want to save the copy and select it. Select the <strong>Select</strong> button to choose it. Then select <strong>OK</strong> to finish.</p>
+<p>This moves the file from the original account it was shared from into your own Google Drive account. Since your Google Drive account is also on Google’s servers, this isn’t technically a file download.</p>
+<p>Now that a copy of the original file is on your account, and no one else is downloading it, you can go ahead and download it now to your local computer without any download quota limitations.</p>
+<h2 id="resolve_a_403_error_user_rate_limit_exceeded" role="presentation" data-text="Resolve a 403 error: User rate limit exceeded"><span class="devsite-heading" role="heading" aria-level="2">How to fix 403 error: User rate limit exceeded</span></h2>
+<p>A <code dir="ltr" translate="no">userRateLimitExceeded</code> error indicates that the per-user limit has been reached. This limit might be the limit from the API console or a limit from the Drive backend. Following is the JSON representation of this error:</p>
+<p class="clear-for-copy"><code dir="ltr"><span class="pun">{</span><span class="pln"><br />
+</span><span class="str">"error"</span><span class="pun">:</span> <span class="pun">{</span><span class="pln"><br />
+</span><span class="str">"errors"</span><span class="pun">:</span> <span class="pun">[</span><span class="pln"><br />
+</span><span class="pun">{</span><span class="pln"><br />
+</span><span class="str">"domain"</span><span class="pun">:</span> <span class="str">"usageLimits"</span><span class="pun">,</span><span class="pln"><br />
+</span><span class="str">"reason"</span><span class="pun">:</span> <span class="str">"userRateLimitExceeded"</span><span class="pun">,</span><span class="pln"><br />
+</span><span class="str">"message"</span><span class="pun">:</span> <span class="str">"User Rate Limit Exceeded"</span><span class="pln"><br />
+</span><span class="pun">}</span><span class="pln"><br />
+</span><span class="pun">],</span><span class="pln"><br />
+</span><span class="str">"code"</span><span class="pun">:</span> <span class="lit">403</span><span class="pun">,</span><span class="pln"><br />
+</span><span class="str">"message"</span><span class="pun">:</span> <span class="str">"User Rate Limit Exceeded"</span><span class="pln"><br />
+</span><span class="pun">}</span><span class="pln"><br />
+</span><span class="pun">}</span></code></p>
+<p>To fix this error, try any of the following:</p>
+<ul>
+<li>Raise the per-user quota in the Developer Console project. For more information, see <a href="https://developers.google.com/drive/api/v3/handle-errors#quota">Request additional quota</a>.</li>
+<li>If one user is making a lot of requests on behalf of many users of a Google Workspace domain, consider a <a href="https://developers.google.com/identity/protocols/OAuth2ServiceAccount">Service Account</a> with authority delegation (setting the <a href="https://developers.google.com/drive/api/v3/query-parameters">quotaUser parameter</a>).</li>
+<li>Use <a href="https://developers.google.com/drive/api/v3/handle-errors#exponential-backoff">exponential backoff</a> to retry the request.</li>
+</ul>
+<h2 id="p353htXjY9">How to Fix “Download quota is exceeded” Error if You’re the Owner</h2>
+<p>If you’re the one hosting the shared file to many people on your <a href="https://drive.google.com/">Google Drive account</a>, the fix for this error is a bit different.</p>
+<p>To do this, just right click on the original file and select <strong>Make a copy</strong>.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-855" src="/wp-content/uploads/2022/03/google-drive-make-a-copy.jpg" alt="google drive file copy" width="680" height="473" srcset="/wp-content/uploads/2022/03/google-drive-make-a-copy.jpg 680w, /wp-content/uploads/2022/03/google-drive-make-a-copy-300x209.jpg 300w, /wp-content/uploads/2022/03/google-drive-make-a-copy-640x445.jpg 640w" sizes="(max-width: 680px) 100vw, 680px" /></p>
+<p>You’ll see a new file appear with “A copy of” in front of the original filename.</p>
+<div class="wp-block-image">
+<p>The file will be shared with the same people as the original file that got blocked. However, since too many people were downloading the old file, it may be worthwhile limiting how many people can download the copy.</p>
+<p>To do this, right-click the file and select <strong>Share</strong>.</p>
+<p>If you’ve provided access to this file to anyone on the internet with the link, it may be worthwhile change this to Restricted instead.</p>
+<p>In the <strong>Get link</strong> section, select <strong>Change</strong>.</p>
+<p>Use the dropdown to change this setting to <strong>Restricted</strong>.</p>
+<p>This means that only people you’ve shared the file with are able to open or download it. Just right-click the file, select <strong>Share</strong>, and add all the emails or groups that you want to provide access.</p>
+<p>This way you can ensure that there aren’t too many people downloading the file and putting your <a href="/tag/google-drive/">Google Drive</a> account at risk from a ban from Google.</p>
+</div>
+<p>The post <a rel="nofollow" href="/fix-error-403-the-user-has-exceeded-their-drive-storage-quota/">How to fix/solve Error 403 The user has exceeded their google drive storage quota</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

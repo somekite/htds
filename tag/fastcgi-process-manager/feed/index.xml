@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>FastCGI Process Manager Archives - How To Do Stuff</title>
+	<atom:link href="/tag/fastcgi-process-manager/feed/" rel="self" type="application/rss+xml" />
+	<link>/tag/fastcgi-process-manager/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Thu, 03 Nov 2022 09:41:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>FastCGI Process Manager Archives - How To Do Stuff</title>
+	<link>/tag/fastcgi-process-manager/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to Install Apache with PHP-FPM in Ubuntu 20.04 / 18.04</title>
+		<link>/install-apache-php-fpm-ubuntu-18-04-20-04/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=install-apache-php-fpm-ubuntu-18-04-20-04</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 31 Mar 2021 10:01:33 +0000</pubDate>
+				<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Apache Configuration]]></category>
+		<category><![CDATA[FastCGI Process Manager]]></category>
+		<category><![CDATA[FPM]]></category>
+		<category><![CDATA[PHP-FPM]]></category>
+		<guid isPermaLink="false">/?p=161</guid>
+
+					<description><![CDATA[<p>PHP FPM (FastCGI Process Manager) is an alternative implementation of PHP FastCGI. It provides some additional features like Adaptive process spawning which is useful for sites. This tutorial will help you to install Apache with PHP-FPM/FastCGI on Ubuntu 20.04 system. In this tutorial, we are using PHP 7.4 and configure with Apache using PHP-FPM and &#8230; <a href="/install-apache-php-fpm-ubuntu-18-04-20-04/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/install-apache-php-fpm-ubuntu-18-04-20-04/">How to Install Apache with PHP-FPM in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter wp-image-167 size-full" src="/wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1.jpg" alt="Install Apache with PHP-FPM on Ubuntu 20" width="1024" height="576" srcset="/wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1.jpg 1024w, /wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1-300x169.jpg 300w, /wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>PHP FPM (FastCGI Process Manager) is an alternative implementation of PHP FastCGI. It provides some additional features like Adaptive process spawning which is useful for sites. This tutorial will help you to install Apache with PHP-FPM/FastCGI on <a href="/category/ubuntu/">Ubuntu</a> 20.04 system. In this tutorial, we are using PHP 7.4 and configure with Apache using PHP-FPM and FastCGI.</p>
+<h2 class="heading1">Step 1 – Installing Apache</h2>
+<p><a href="/category/apache/">Apache</a> web server debian packages are available under the default repositories. Login to your Ubuntu system with sudo privileges account. Open a terminal. And run the following commands in it :</p>
+<pre>sudo apt update 
+sudo apt install apache2 libapache2-mod-fcgid
+</pre>
+<p>The above commands will install Apache and FastCGI module to your server.</p>
+<h2 class="heading1">Step 2 – Install PHP with FPM</h2>
+<p>Next, install PHP and PHP-FPM on your Ubuntu system. For this tutorial, we choose PHP 7.4 to install using</p>
+<p>For the PHP installation we recommend to use <a href="https://launchpad.net/~ondrej/+archive/ubuntu/php" target="_blank" rel="noopener noreferrer">ppa:ondrej/php</a> PPA. Execute below couple of commands to add the PPA to your system.</p>
+<pre>sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+</pre>
+<p>Then install PHP 7.4 (or required version) the latest version available on the day of writing this tutorial. Simply execute follows commands for the installation of PHP and PHP-FPM packages.</p>
+<pre>sudo apt update
+sudo apt install php7.4 php7.4-fpm
+</pre>
+<div class="ta_info"><strong>Note:- </strong>When you are using PHP-FPM. All the PHP modules configurations are residing under /etc/php/7.4/fpm directory. You can read more about enable/disable PHP modules.</div>
+<p>After installing the packages php7.4-fpm service will automatically be started. To make sure, type:</p>
+<pre><strong>sudo systemctl status php7.4-fpm</strong>
+
+● php7.4-fpm.service - The PHP 7.4 FastCGI Process Manager
+     Loaded: loaded (/lib/systemd/system/php7.4-fpm.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2020-05-09 04:41:44 UTC; 19s ago
+       Docs: man:php-fpm7.4(8)
+    Process: 375077 ExecStartPost=/usr/lib/php/php-fpm-socket-helper install /run/php/php-fpm.sock /etc/php/7.4/fpm/pool.d/www.conf 74 (code=exited&gt;
+   Main PID: 375073 (php-fpm7.4)
+     Status: "Processes active: 0, idle: 2, Requests: 0, slow: 0, Traffic: 0req/sec"
+      Tasks: 3 (limit: 2283)
+     Memory: 9.3M
+     CGroup: /system.slice/php7.4-fpm.service
+             ├─375073 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+             ├─375075 php-fpm: pool www
+             └─375076 php-fpm: pool www
+
+May 09 04:41:43 tecadmin systemd[1]: Starting The PHP 7.4 FastCGI Process Manager...
+May 09 04:41:44 tecadmin systemd[1]: Started The PHP 7.4 FastCGI Process Manager.
+</pre>
+<h2 class="heading1">Step 3 – Apache Configuration</h2>
+<p>Now, You need to enable some of the Apache modules required for the FastCGI confiugration. You can enable the requird module by running command:</p>
+<pre>sudo a2enmod actions fcgid alias proxy_fcgi
+</pre>
+<p>Then configure Apache Virtual Host to run with FPM/FastCGI. For this tutorial, we use default VirtualHost. Edit VirtualHost host configuration file in a text editor. You can also create a new configuration as per your choice.</p>
+<pre>sudo vim /etc/apache2/sites-available/000-default.conf
+</pre>
+<p>Update the configuration as followings.</p>
+<p>&nbsp;</p>
+<div id="crayon-606445a0ad6ac359109522" class="crayon-syntax crayon-theme-github crayon-font-liberation-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="hide">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-1">1</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-2">2</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-3">3</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-4">4</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-5">5</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-6">6</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-7">7</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-8">8</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-9">9</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-10">10</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-11">11</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-12">12</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-13">13</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-14">14</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-15">15</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-16">16</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-17">17</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-18">18</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-19">19</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-606445a0ad6ac359109522-1" class="crayon-line"><span class="crayon-r ">&lt;</span><span class="crayon-r ">VirtualHost</span> <span class="crayon-e ">*:80</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-2" class="crayon-line"><span class="crayon-r">    ServerName</span> <span class="crayon-i ">example</span><span class="crayon-sy">.</span><span class="crayon-i ">com</span></div>
+<div id="crayon-606445a0ad6ac359109522-3" class="crayon-line"><span class="crayon-r">    ServerAlias</span> <span class="crayon-i ">www</span><span class="crayon-sy">.</span><span class="crayon-i ">example</span><span class="crayon-sy">.</span><span class="crayon-i ">com</span></div>
+<div id="crayon-606445a0ad6ac359109522-4" class="crayon-line"><span class="crayon-r">    DocumentRoot</span> /<span class="crayon-i ">var</span>/<span class="crayon-i ">www</span>/<span class="crayon-i ">html</span></div>
+<div id="crayon-606445a0ad6ac359109522-5" class="crayon-line"></div>
+<div id="crayon-606445a0ad6ac359109522-6" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">Directory</span> <span class="crayon-e ">/var/www/html</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-7" class="crayon-line"><span class="crayon-r">        Options</span> <span class="crayon-v ">-Indexes</span> +<span class="crayon-i ">FollowSymLinks</span> +<span class="crayon-i ">MultiViews</span></div>
+<div id="crayon-606445a0ad6ac359109522-8" class="crayon-line"><span class="crayon-r">        AllowOverride</span> <span class="crayon-i ">All</span></div>
+<div id="crayon-606445a0ad6ac359109522-9" class="crayon-line"><span class="crayon-r">        Require</span> <span class="crayon-i ">all</span> <span class="crayon-i ">granted</span></div>
+<div id="crayon-606445a0ad6ac359109522-10" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">/Directory</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-11" class="crayon-line"></div>
+<div id="crayon-606445a0ad6ac359109522-12" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">FilesMatch</span> <span class="crayon-e ">\.php$</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-13" class="crayon-line"><span class="crayon-h">        </span><span class="crayon-c"># 2.4.10+ can proxy to unix socket</span></div>
+<div id="crayon-606445a0ad6ac359109522-14" class="crayon-line"><span class="crayon-r">        SetHandler</span> <span class="crayon-s">&#8220;proxy:unix:/var/run/php/php7.4-fpm.sock|fcgi://localhost&#8221;</span></div>
+<div id="crayon-606445a0ad6ac359109522-15" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">/FilesMatch</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-16" class="crayon-line"></div>
+<div id="crayon-606445a0ad6ac359109522-17" class="crayon-line"><span class="crayon-r">    ErrorLog</span> <span class="crayon-sy">$</span><span class="crayon-sy">{</span><span class="crayon-i ">APACHE_LOG_DIR</span><span class="crayon-sy">}</span>/<span class="crayon-i ">error</span><span class="crayon-sy">.</span><span class="crayon-i ">log</span></div>
+<div id="crayon-606445a0ad6ac359109522-18" class="crayon-line"><span class="crayon-r">    CustomLog</span> <span class="crayon-sy">$</span><span class="crayon-sy">{</span><span class="crayon-i ">APACHE_LOG_DIR</span><span class="crayon-sy">}</span>/<span class="crayon-i ">access</span><span class="crayon-sy">.</span><span class="crayon-i ">log</span> <span class="crayon-i ">combined</span></div>
+<div id="crayon-606445a0ad6ac359109522-19" class="crayon-line"><span class="crayon-r ">&lt;</span><span class="crayon-r ">/VirtualHost</span><span class="crayon-r ">&gt;</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Save your changes to the configuration file and restart Apache to reload the changes.</p>
+<pre>sudo systemctl restart apache2
+</pre>
+<h2 class="heading1">Step 4 – Verify Setup</h2>
+<p>Apache with PHP-FPM configuration has been done. Now all the PHP files will be run with the FPM.</p>
+<p>To verify these settigns, create a PHP script with <strong>phpinfo()</strong> function and place it to your server document root. Use below command to create file:</p>
+<pre>echo "<strong>&lt;?php phpinfo(); ?&gt;</strong>" &gt; /var/www/html/info.php
+</pre>
+<p>Then access the info.php using server IP address (for default VirtualHost) or your configured domain in Apache VirtualHost.</p>
+<p><img decoding="async" class="aligncenter wp-image-162 size-full" src="/wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04.png" alt="" width="988" height="636" srcset="/wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04.png 988w, /wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04-300x193.png 300w, /wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04-768x494.png 768w" sizes="(max-width: 988px) 100vw, 988px" /></p>
+<p>The post <a rel="nofollow" href="/install-apache-php-fpm-ubuntu-18-04-20-04/">How to Install Apache with PHP-FPM in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

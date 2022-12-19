@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ubuntu Archives - How To Do Stuff</title>
+	<atom:link href="/category/ubuntu/feed/" rel="self" type="application/rss+xml" />
+	<link>/category/ubuntu/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Mon, 28 Nov 2022 12:07:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Ubuntu Archives - How To Do Stuff</title>
+	<link>/category/ubuntu/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to list services in Ubuntu 22.04 / 20.04 / 18.04 : Command guide</title>
+		<link>/how-to-list-all-services-in-ubuntu-20-22/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-list-all-services-in-ubuntu-20-22</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 02 Jun 2021 00:39:17 +0000</pubDate>
+				<category><![CDATA[Command Help]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Command]]></category>
+		<category><![CDATA[Ubuntu Help]]></category>
+		<category><![CDATA[Ubuntu services]]></category>
+		<category><![CDATA[linux running services]]></category>
+		<category><![CDATA[Linux Services]]></category>
+		<category><![CDATA[List all running services on ubuntu]]></category>
+		<category><![CDATA[list all services ubuntu]]></category>
+		<category><![CDATA[list of running services ubuntu]]></category>
+		<category><![CDATA[List running services in ubuntu]]></category>
+		<category><![CDATA[List running services on Linux]]></category>
+		<category><![CDATA[List services command Ubuntu 22.04]]></category>
+		<category><![CDATA[list services ubuntu 20.04]]></category>
+		<category><![CDATA[lsb_release]]></category>
+		<category><![CDATA[show running services ubuntu]]></category>
+		<category><![CDATA[Ubuntu 18.04]]></category>
+		<category><![CDATA[ubuntu 20 list services]]></category>
+		<category><![CDATA[Ubuntu 20.04]]></category>
+		<category><![CDATA[ubuntu 20.04 list services]]></category>
+		<category><![CDATA[Ubuntu 22 services list]]></category>
+		<category><![CDATA[Ubuntu 22.04]]></category>
+		<category><![CDATA[Ubuntu 22.04 list services]]></category>
+		<category><![CDATA[Ubuntu FAQ]]></category>
+		<category><![CDATA[ubuntu list active services]]></category>
+		<category><![CDATA[Ubuntu list services command]]></category>
+		<category><![CDATA[Ubuntu Service Command]]></category>
+		<category><![CDATA[ubuntu service list]]></category>
+		<category><![CDATA[ubuntu service status all]]></category>
+		<category><![CDATA[Ubuntu Services]]></category>
+		<category><![CDATA[Ubuntu services list command]]></category>
+		<category><![CDATA[ubuntu version]]></category>
+		<category><![CDATA[view all services ubuntu]]></category>
+		<guid isPermaLink="false">/?p=5</guid>
+
+					<description><![CDATA[<p>In this tutorial we are going to learn how to list services in Ubuntu 22 / Ubuntu 20 / Ubuntu 18 using the command line interface. We will see how we can list running services and services that are not running. Ubuntu list all services systemctl, systemctl list all services, List running services in Ubuntu &#8230; <a href="/how-to-list-all-services-in-ubuntu-20-22/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-list-all-services-in-ubuntu-20-22/">How to list services in Ubuntu 22.04 / 20.04 / 18.04 : Command guide</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p><img decoding="async" class="aligncenter size-full wp-image-170" src="/wp-content/uploads/2020/06/List-services-in-linux.png" alt="" width="746" height="396" srcset="/wp-content/uploads/2020/06/List-services-in-linux.png 746w, /wp-content/uploads/2020/06/List-services-in-linux-300x159.png 300w" sizes="(max-width: 746px) 100vw, 746px" /></p>
+<p>In this tutorial we are going to learn how to list services in Ubuntu 22 / Ubuntu 20 / Ubuntu 18 using the command line interface. We will see how we can list running services and services that are not running.</p>
+<p><strong>Ubuntu list all services systemctl</strong>, <strong>systemctl list all services, List running services in Ubuntu 22 / Ubuntu 20 / Ubuntu 18</strong></p>
+<p><a href="/category/ubuntu/">Ubuntu</a>: How do I list all of the services on my Ubuntu 22.04 or <a href="/tag/ubuntu-20-04/">Ubuntu 20.04</a> or <a href="/tag/ubuntu-18-04/">Ubuntu 18.04</a> system from the <a href="/category/linux/">Linux</a> command line / Terminal ?  How to list running services on Ubuntu 22.04 / Ubuntu 20.04 ?</p>
+
+
+
+<p>Answer: Use this command:</p>
+
+
+
+<pre class="wp-block-code"><code>service --status-all</code></pre>
+
+
+
+<p>Here’s an example of what this looks like on an <a href="/tag/ubuntu-18-04/">Ubuntu 18.04</a> LTS system:</p>
+
+
+
+<h3 id="toc_0">The meaning of the Ubuntu <code>service</code> command output</h3>
+
+
+
+<p>From the Ubuntu Linux <code>service</code> man page:</p>
+
+
+
+<p><code>service --status-all</code> runs all init scripts, in alphabetical order, with the <code>status</code> command. The status is:</p>
+
+
+
+<ul>
+<li><code>[ + ]</code> running services</li>
+<li><code>[ - ]</code> stopped services</li>
+<li><code>[ ? ]</code> services without a &#8216;status&#8217; command</li>
+</ul>
+
+
+
+<p>This option only calls status for sysvinit jobs; upstart jobs can be queried in a similar manner with <code>initctl list</code>.</p>
+<p>&nbsp;</p>
+
+
+
+<h2 id="toc_1">How to show the Ubuntu version</h2>
+
+
+
+<p>In a slightly-related note, you can show your Ubuntu version information with the <code>lsb_release -a</code> command:</p>
+
+
+
+<pre class="wp-block-code"><code>root&gt; lsb_release -a<br />No LSB modules are available.<br />Distributor ID: Ubuntu<br />Description: Ubuntu 20.04.5 LTS<br />Release: 20.04<br />Codename: focal
+</code></pre>
+<p>Also read :</p>
+<ul>
+<li><a href="/change-keyring-password-in-ubuntu/">How to change keyring password in Ubuntu</a></li>
+<li><a href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04/" target="_blank" rel="noopener">How To Install Linux, Nginx, MySQL, PHP (LEMP stack)</a></li>
+</ul>
+<p>The post <a rel="nofollow" href="/how-to-list-all-services-in-ubuntu-20-22/">How to list services in Ubuntu 22.04 / 20.04 / 18.04 : Command guide</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to Back Up and Restore a MySQL Database : Easy Tutorial</title>
+		<link>/back-up-and-restore-a-mysql-database-easy-tutorial/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=back-up-and-restore-a-mysql-database-easy-tutorial</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Tue, 11 May 2021 12:30:05 +0000</pubDate>
+				<category><![CDATA[Backup & Restore Database]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[MySQL backup & restore]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Backup]]></category>
+		<category><![CDATA[database backup]]></category>
+		<category><![CDATA[database restore]]></category>
+		<category><![CDATA[Easy backup mysql steps]]></category>
+		<category><![CDATA[Easy mysql backup]]></category>
+		<category><![CDATA[Easy mysql restore]]></category>
+		<category><![CDATA[Easy restore mysql steps]]></category>
+		<category><![CDATA[How to backup mysql database]]></category>
+		<category><![CDATA[How to backup mysql database in ubuntu]]></category>
+		<category><![CDATA[How to restore mysql database]]></category>
+		<category><![CDATA[Mysql backup]]></category>
+		<category><![CDATA[Mysql restore]]></category>
+		<category><![CDATA[Restore]]></category>
+		<guid isPermaLink="false">/?p=485</guid>
+
+					<description><![CDATA[<p>It is essential to important to make regular backups of all data in case of loss. Has your MySQL database has been lost, and you’re scrambling to restore a copy from your last backup? In this tutorial, we present two easy ways to back up and restore your MySQL Database. Prerequisites A Linux operating system MySQL installed &#8230; <a href="/back-up-and-restore-a-mysql-database-easy-tutorial/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/back-up-and-restore-a-mysql-database-easy-tutorial/">How to Back Up and Restore a MySQL Database : Easy Tutorial</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>It is essential to important to make regular backups of all data in case of loss. Has your MySQL database has been lost, and you’re scrambling to restore a copy from your last backup?</p>
+<p><strong>In this tutorial, we present two easy ways to back up and restore your MySQL Database.</strong></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-486" src="/wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases.png" alt="how-to-back-up-and-restore-mysql-databases" width="800" height="400" srcset="/wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases.png 800w, /wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases-300x150.png 300w, /wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases-768x384.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p class="h3">Prerequisites</p>
+<ul>
+<li>A Linux operating system</li>
+<li>MySQL installed</li>
+<li>An existing database</li>
+<li>Mysqldump utility (should be included with your MySQL software)</li>
+</ul>
+<h2 id="ftoc-heading-1" class="ftwp-heading">Back Up from the Command-Line with mysqldump</h2>
+<p>The <strong>mysqldump client utility</strong> can dump a database including the SQL statements required to rebuild the database.</p>
+<p>By default, the dump file includes the SQL commands to restore the tables and data.</p>
+<p>To back up your MySQL database, the general syntax is:</p>
+<pre class="wp-block-code"><code>sudo mysqldump -u [user] -p [database_name] &gt; [filename].sql</code></pre>
+<ul>
+<li>Replace [<strong>user</strong>] with your username and password (if needed).</li>
+<li>The [<strong>database_name</strong>] is the path and filename of the database.</li>
+<li>The <strong>&gt; </strong>command specifies the output.</li>
+<li>[<strong>filename</strong>] is the path and filename you want to save the dump file as.</li>
+</ul>
+<p>Other examples:</p>
+<p>To back up of an entire Database Management System:</p>
+<pre class="wp-block-code"><code>mysqldump --all-databases --single-transaction --quick --lock-tables=false &gt; full-backup-$(date +%F).sql -u root -p</code></pre>
+<p>To include more than one database in the backup dump file:</p>
+<pre class="wp-block-code"><code>sudo mysqldump -u [user] -p [database_1] [database_2] [database_etc] &gt; [filename].sql</code></pre>
+<h2 id="ftoc-heading-2" class="ftwp-heading">How to Restore MySQL with mysqldump</h2>
+<h3 id="ftoc-heading-3" class="ftwp-heading">Step 1: Create New Database</h3>
+<p>On the system that hosts the database, use MySQL to create a new database.</p>
+<p>Make sure you’ve named it the same as the database you lost. This creates the foundation file that mysqldump will import the data into. Since the dump file has the commands to rebuild the database, you only need to create the empty database.</p>
+<h3 id="ftoc-heading-4" class="ftwp-heading">Step 2: Restore MySQL Dump</h3>
+<p>To restore a MySQL backup, enter:</p>
+<pre class="wp-block-code"><code>mysql -u [user] -p [database_name] &lt; [filename].sql</code></pre>
+<p>Make sure to include <strong>[database_name]</strong> and <strong>[filename</strong>] in the path.</p>
+<p>It’s likely that on the host machine, <strong>[database_name]</strong> can be in a root directory, so you may not need to add the path. Make sure that you specify the exact path for the dump file you’re restoring, including server name (if needed).</p>
+<h2 id="ftoc-heading-5" class="ftwp-heading">Using phpMyAdmin to Back Up or Restore MySQL</h2>
+<p>If you’re running phpMyAdmin backing up and <strong>restoring your MySQL database </strong>is simple.</p>
+<p>The <strong>export </strong>function is used as a backup, and the <strong>import </strong>function is used to restore.</p>
+<h3 id="ftoc-heading-6" class="ftwp-heading">Step 1: Create a MySQL Database Backup</h3>
+<p>1. Open phpMyAdmin. On the directory tree on the left, click the database you want to back up.</p>
+<p>This should open the directory structure in the right-hand window. You’ll also notice that, in the directory tree on the left, all the assets under the main database are highlighted.</p>
+<p>2. Click <strong>Export </strong>on the menu across the top of the display.</p>
+<p>You’ll see a section called “Export Method.” Use <strong>Quick </strong>to save a copy of the whole database. Choose <strong>Custom </strong>to select individual tables or other special options.</p>
+<p>Leave the <strong>Format </strong>field set to <strong>SQL, </strong>unless you have a good reason to change it.</p>
+<p>3. Click <strong>Go.</strong> If you select <strong>Quick, </strong>your web browser will download a copy of the database into your specified downloads folder. You can copy that to a safe location.</p>
+<h3 id="ftoc-heading-7" class="ftwp-heading">Step 2: Clear the Old Database Information</h3>
+<p>It’s important to clear out old data before restoring a backup. If there’s any old data, it isn’t overwritten when you restore. This can create duplicate tables, causing errors and conflicts.</p>
+<p>1. Open phpMyAdmin, on the navigation pane on the left, choose the database you want to restore.</p>
+<p>2. Click the <strong>check all </strong>box near the bottom. Then, use the drop-down menu labeled <strong>With selected </strong>to select <strong>Drop.</strong></p>
+<p>3. The tool should prompt you to confirm that you want to go forward. Click <strong>yes.</strong></p>
+<p>This will get rid of all the existing data, clearing the way for your restoration.</p>
+<h3 id="ftoc-heading-8" class="ftwp-heading">Step 3: Restore Your Backed up MySQL Database</h3>
+<p>In phpMyAdmin, the <strong>Import </strong>tool is used to restore a database.</p>
+<p>1. On the menu across the top, click <strong>Import</strong>.</p>
+<p>2. The first section is labeled <strong>File to import.</strong> A couple of lines down, there’s a line that starts with “Browse your computer,” with a button labeled <strong>Choose File. </strong>Click that button.</p>
+<p>3. Use the dialog box to navigate to the location where you’ve saved the export file that you want to restore. Leave all the options set to default. (If you created your backup with different options, you can select those here.)</p>
+<p>4. Click <strong>Go.</strong></p>
+<p>Also read : <a href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04/">How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu</a></p>
+<p>The post <a rel="nofollow" href="/back-up-and-restore-a-mysql-database-easy-tutorial/">How to Back Up and Restore a MySQL Database : Easy Tutorial</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to disable keyring password in Ubuntu 20.04 / Ubuntu 18.04</title>
+		<link>/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2021 10:20:15 +0000</pubDate>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Help]]></category>
+		<category><![CDATA[Ubuntu Linux]]></category>
+		<category><![CDATA[an application wants access to the keyring ubuntu 20.04]]></category>
+		<category><![CDATA[default keyring ubuntu disable]]></category>
+		<category><![CDATA[disable default keyring ubuntu]]></category>
+		<category><![CDATA[Disable keyring]]></category>
+		<category><![CDATA[Disable keyring ubuntu]]></category>
+		<category><![CDATA[disable login keyring]]></category>
+		<category><![CDATA[disable password ubuntu 20.04]]></category>
+		<category><![CDATA[disable reyring password]]></category>
+		<category><![CDATA[gnome keyring auto unlock]]></category>
+		<category><![CDATA[gnome keyring disable]]></category>
+		<category><![CDATA[gnome keyring remove password]]></category>
+		<category><![CDATA[how to disable keyring in ubuntu 20.04]]></category>
+		<category><![CDATA[Password and Keys]]></category>
+		<category><![CDATA[remove default keyring ubuntu 20.04]]></category>
+		<category><![CDATA[remove keyring]]></category>
+		<category><![CDATA[remove keyring password ubuntu]]></category>
+		<category><![CDATA[remove keyring ubuntu]]></category>
+		<category><![CDATA[remove keyring ubuntu 20.04]]></category>
+		<category><![CDATA[Ubuntu 18.04 disable keyring]]></category>
+		<category><![CDATA[Ubuntu 20.04 disable keyring]]></category>
+		<category><![CDATA[ubuntu auto unlock keyring]]></category>
+		<category><![CDATA[ubuntu disable default keyring]]></category>
+		<category><![CDATA[Ubuntu disable keyring]]></category>
+		<category><![CDATA[ubuntu disable login keyring]]></category>
+		<category><![CDATA[Ubuntu keyring]]></category>
+		<category><![CDATA[ubuntu keyring password disable]]></category>
+		<category><![CDATA[ubuntu turn off keyring]]></category>
+		<category><![CDATA[unlock keyring]]></category>
+		<category><![CDATA[unlock login keyring ubuntu 20.04]]></category>
+		<guid isPermaLink="false">/?p=194</guid>
+
+					<description><![CDATA[<p>Disable/Remove keyring password in Ubuntu 20.04 or Ubuntu 18.04 In cases where you want to use automatic login but don’t want to unlock keyring manually, you may choose to disable the keyring with a workaround. Keep in mind that you are disabling a security feature so think twice before doing so. Gnome keyring auto unlock &#8230; <a href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to disable keyring password in Ubuntu 20.04 / Ubuntu 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2><img decoding="async" class="aligncenter wp-image-345 size-full" src="/wp-content/uploads/2021/04/Disable-Keyring-ubuntu.jpg" alt="Disable keyring password in ubuntu" width="864" height="500" srcset="/wp-content/uploads/2021/04/Disable-Keyring-ubuntu.jpg 864w, /wp-content/uploads/2021/04/Disable-Keyring-ubuntu-300x174.jpg 300w, /wp-content/uploads/2021/04/Disable-Keyring-ubuntu-768x444.jpg 768w" sizes="(max-width: 864px) 100vw, 864px" /></h2>
+<h2>Disable/Remove keyring password in Ubuntu 20.04 or Ubuntu 18.04</h2>
+<p>In cases where you want to use automatic login but don’t want to unlock keyring manually, you may choose to <a href="/tag/disable-keyring/">disable the keyring</a> with a workaround. Keep in mind that you are disabling a security feature so think twice before doing so.<br />
+<!-- my ad1 --><br />
+<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-3868416474486216" data-ad-slot="9405644746" data-ad-format="auto" data-full-width-responsive="true"></ins><br />
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<h3>Gnome keyring auto unlock</h3>
+<p>The process is similar to <a href="/change-keyring-password-in-ubuntu/">changing keyring password</a>. Open Password and Keys application and go on to change the keyring password.</p>
+<p>The trick is that when it asks to change the password, don’t enter a new password and hit Continue instead. This will remove any password from the keyring.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-195" src="/wp-content/uploads/2021/04/disable-keyring-password-ubuntu.png" alt="" width="800" height="500" srcset="/wp-content/uploads/2021/04/disable-keyring-password-ubuntu.png 800w, /wp-content/uploads/2021/04/disable-keyring-password-ubuntu-300x188.png 300w, /wp-content/uploads/2021/04/disable-keyring-password-ubuntu-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<figure class="wp-block-image size-large"><figcaption>Disable Keyring password by not setting any password at all</figcaption></figure>
+<p>This way, the keyring will have no password and it remains unlocked all the time.</p>
+<p>Also read : <a href="/use-ubuntu-keyring/" target="_blank" rel="noopener">How to Use Keyring in Ubuntu</a></p>
+<p>The post <a rel="nofollow" href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to disable keyring password in Ubuntu 20.04 / Ubuntu 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to Change keyring password in Ubuntu 20.04 / 18.04</title>
+		<link>/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=change-keyring-password-in-ubuntu-20-04-ubuntu-18-04</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2021 10:12:47 +0000</pubDate>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Help]]></category>
+		<category><![CDATA[Ubuntu Linux]]></category>
+		<category><![CDATA[change default keyring password ubuntu]]></category>
+		<category><![CDATA[change gnome keyring password]]></category>
+		<category><![CDATA[Change keyring]]></category>
+		<category><![CDATA[change keyring password]]></category>
+		<category><![CDATA[change keyring password command line]]></category>
+		<category><![CDATA[change keyring password ubuntu 18.04]]></category>
+		<category><![CDATA[change keyring password ubuntu 20.04]]></category>
+		<category><![CDATA[change login keyring password ubuntu]]></category>
+		<category><![CDATA[change ubuntu keyring password]]></category>
+		<category><![CDATA[forgot keyring password ubuntu]]></category>
+		<category><![CDATA[how to change password on ubuntu 20.04]]></category>
+		<category><![CDATA[keyring]]></category>
+		<category><![CDATA[keyring password]]></category>
+		<category><![CDATA[linux change keyring password]]></category>
+		<category><![CDATA[Passwords and keys]]></category>
+		<category><![CDATA[Ubuntu 18.04 change keyring]]></category>
+		<category><![CDATA[Ubuntu 20.04 change keyring]]></category>
+		<category><![CDATA[ubuntu 20.04 change keyring password]]></category>
+		<category><![CDATA[ubuntu change keyring password]]></category>
+		<category><![CDATA[ubuntu forgot keyring password]]></category>
+		<category><![CDATA[ubuntu keyring change password]]></category>
+		<category><![CDATA[ubuntu keyring password change]]></category>
+		<category><![CDATA[ubuntu reset keyring password]]></category>
+		<category><![CDATA[ubuntu update keyring password]]></category>
+		<category><![CDATA[unlock keyring]]></category>
+		<guid isPermaLink="false">/?p=185</guid>
+
+					<description><![CDATA[<p>Change keyring password in Ubuntu / Debian Suppose you changed your account password. Now when you login, your system tries to unlock the keyring automatically using the new login password. But the keyring still uses the old login password. In such a case, you can change the keyring password to the new login password so &#8230; <a href="/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to Change keyring password in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2><img decoding="async" class="aligncenter size-large wp-image-672" src="/wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-1024x306.png" alt="how to change keyring password ubuntu" width="600" height="179" srcset="/wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-1024x306.png 1024w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-300x90.png 300w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-768x229.png 768w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-640x191.png 640w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu.png 1091w" sizes="(max-width: 600px) 100vw, 600px" />Change keyring password in Ubuntu / Debian</h2>
+<p>Suppose you changed your account password. Now when you login, your system tries to unlock the <a href="/tag/keyring/">keyring</a> automatically using the new login password. But the keyring still uses the old login password.</p>
+<p>In such a case, you can <a href="/tag/ubuntu-change-keyring-password/">change the keyring password</a> to the new login password so that the keyring gets unlocked automatically as soon as you login to your system.</p>
+<h3>Keyring password change &#8211; Steps for Ubuntu / Debian based systems</h3>
+<p>Open the Password and Keys application from the menu:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-186" src="/wp-content/uploads/2021/04/password-and-keys-app-ubuntu.jpg" alt="" width="800" height="220" srcset="/wp-content/uploads/2021/04/password-and-keys-app-ubuntu.jpg 800w, /wp-content/uploads/2021/04/password-and-keys-app-ubuntu-300x83.jpg 300w, /wp-content/uploads/2021/04/password-and-keys-app-ubuntu-768x211.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Look for Password and Keys app in the menu</p>
+<p>Now, right click on the Login keyring and click on Change Password:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-187" src="/wp-content/uploads/2021/04/change-keyring-password.png" alt="" width="800" height="500" srcset="/wp-content/uploads/2021/04/change-keyring-password.png 800w, /wp-content/uploads/2021/04/change-keyring-password-300x188.png 300w, /wp-content/uploads/2021/04/change-keyring-password-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Change Keyring Password<br />
+<strong>What if you don’t remember the old login password?</strong></p>
+<p>You probably know that it is easy to reset forgotten password in <a href="/category/ubuntu/">Ubuntu</a>. The problem comes with the keyring in such cases. You changed the account password but you don’t remember the old account password that is still used by the keyring.</p>
+<p>Now you cannot change it because you don’t know the old password. What to do now?</p>
+<p>In such a case, you’ll have to remove the entire keyring itself. You can do that from the Passwords and Keys application:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-188" src="/wp-content/uploads/2021/04/delete-keyring-ubuntu.jpg" alt="" width="800" height="500" srcset="/wp-content/uploads/2021/04/delete-keyring-ubuntu.jpg 800w, /wp-content/uploads/2021/04/delete-keyring-ubuntu-300x188.jpg 300w, /wp-content/uploads/2021/04/delete-keyring-ubuntu-768x480.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>It will ask for your confirmation:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-189" src="/wp-content/uploads/2021/04/delete-keyring.jpg" alt="" width="629" height="198" srcset="/wp-content/uploads/2021/04/delete-keyring.jpg 629w, /wp-content/uploads/2021/04/delete-keyring-300x94.jpg 300w" sizes="(max-width: 629px) 100vw, 629px" /></p>
+<p>Alternatively, you may also manually delete the keyring files in ~/.local/share/keyrings directory.</p>
+<p>When the old keyring is removed and you try to use Chrome/Chromium, it will ask you to create new keyring.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-190" src="/wp-content/uploads/2021/04/new-keyring-password.jpg" alt="" width="800" height="350" srcset="/wp-content/uploads/2021/04/new-keyring-password.jpg 800w, /wp-content/uploads/2021/04/new-keyring-password-300x131.jpg 300w, /wp-content/uploads/2021/04/new-keyring-password-768x336.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>You can use the new login password so that the keyring gets unlocked automatically.</p>
+<p>&nbsp;</p>
+<p>Also read:</p>
+<p><a href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to disable keyring password in Ubuntu</a></p>
+<p>The post <a rel="nofollow" href="/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to Change keyring password in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to Use Keyring in Ubuntu</title>
+		<link>/use-ubuntu-keyring/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=use-ubuntu-keyring</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Thu, 01 Apr 2021 09:43:36 +0000</pubDate>
+				<category><![CDATA[Explain]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[an application wants access to the keyring ubuntu 20.04]]></category>
+		<category><![CDATA[auto unlock ubuntu]]></category>
+		<category><![CDATA[chrome]]></category>
+		<category><![CDATA[gnome-keyring]]></category>
+		<category><![CDATA[GPG keys]]></category>
+		<category><![CDATA[keychain]]></category>
+		<category><![CDATA[keyring]]></category>
+		<category><![CDATA[keyring feature]]></category>
+		<category><![CDATA[keyring ubuntu]]></category>
+		<category><![CDATA[keyring use in ubuntu]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[login keyring]]></category>
+		<category><![CDATA[login keyring linux]]></category>
+		<category><![CDATA[password]]></category>
+		<category><![CDATA[password and keys ubuntu]]></category>
+		<category><![CDATA[seahorse]]></category>
+		<category><![CDATA[SSH keys]]></category>
+		<category><![CDATA[ubuntu chrome keyring]]></category>
+		<category><![CDATA[Ubuntu keyring]]></category>
+		<category><![CDATA[ubuntu unlock keyring command line]]></category>
+		<category><![CDATA[unlock login keyring ubuntu 20.04]]></category>
+		<category><![CDATA[use of keyring in ubuntu]]></category>
+		<category><![CDATA[using keyring in ubuntu 20]]></category>
+		<category><![CDATA[what is keyring]]></category>
+		<guid isPermaLink="false">/?p=174</guid>
+
+					<description><![CDATA[<p>If you use automatic login in Ubuntu or other Linux distributions, you might have come across a pop-up message of this sort: Enter password to unlock your login keyring The login keyring did not get unlocked when you logged into your computer. It keeps on popping up several times before disappearing if you keep on clicking cancel. &#8230; <a href="/use-ubuntu-keyring/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/use-ubuntu-keyring/">How to Use Keyring in Ubuntu</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>If you use automatic login in <a href="/category/ubuntu/">Ubuntu</a> or other Linux distributions, you might have come across a pop-up message of this sort:</p>
+<p><strong>Enter password to unlock your login keyring<br />
+The login keyring did not get unlocked when you logged into your computer.</strong></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-175" src="/wp-content/uploads/2021/04/enter-password-to-unlock-your-login-keyring-ubuntu.jpg" alt="" width="799" height="330" srcset="/wp-content/uploads/2021/04/enter-password-to-unlock-your-login-keyring-ubuntu.jpg 799w, /wp-content/uploads/2021/04/enter-password-to-unlock-your-login-keyring-ubuntu-300x124.jpg 300w, /wp-content/uploads/2021/04/enter-password-to-unlock-your-login-keyring-ubuntu-768x317.jpg 768w" sizes="(max-width: 799px) 100vw, 799px" /></p>
+<p>It keeps on popping up several times before disappearing if you keep on clicking cancel. You may wonder why do you keep seeing this keyring message all the time?</p>
+<p>Let me tell you something. It’s not an error. It’s a security feature.</p>
+<p>Surprised? Let me explain the keyring concept in Linux.</p>
+<h2>What is keyring in Linux and why is it used?</h2>
+<p><img decoding="async" class="aligncenter size-full wp-image-177" src="/wp-content/uploads/2021/04/keyring-concept-ubuntu-1.png" alt="" width="800" height="450" srcset="/wp-content/uploads/2021/04/keyring-concept-ubuntu-1.png 800w, /wp-content/uploads/2021/04/keyring-concept-ubuntu-1-300x169.png 300w, /wp-content/uploads/2021/04/keyring-concept-ubuntu-1-768x432.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Why do you use a keyring (also called <a href="https://en.wikipedia.org/wiki/Keychain" target="_blank" rel="noreferrer noopener" aria-label="keychain (opens in a new tab)">keychain</a>) in the real life? You use it to keep one or more keys grouped together so that they are easy to find and carry.</p>
+<p>It’s the same concept in Linux. The keyring feature allows your system to group various passwords together and keep it one place.</p>
+<p>Most desktop environments like GNOME, KDE, Xfce etc use an implementation of <a href="https://wiki.archlinux.org/index.php/GNOME/Keyring" target="_blank" rel="noreferrer noopener" aria-label="gnome-keyring (opens in a new tab)">gnome-keyring</a> to provide this keyring feature in Linux.</p>
+<p>This keyring keeps your ssh keys, GPG keys and keys from applications that use this feature, like Chromium browser. By default, the <strong>keyring is locked with a master password</strong> which is often the login password of the account.</p>
+<p>Every user on your system has its own keyring with (usually) the same password as that of the user account itself. When you login to your system with your password, your keyring is unlocked automatically with your account’s password.</p>
+<p>The problem comes when you switch to auto-login in Ubuntu. This means that you login to the system without entering the password. In such case, your keyring is not unlocked automatically.</p>
+<h3>Keyring is a security feature</h3>
+<p>Remember I told you that the keyring was a security feature? Now imagine that on your Linux desktop, you are using auto-login. Anyone with access to your desktop can enter the system without password but you have no issues with that perhaps because you use it to browse internet only.</p>
+<p>But if you use a browser like Chromium or Google Chrome in Ubuntu, and use it to save your login-password for various websites, you have an issue on your hand. Anyone can use the browser and login to the websites for which you have saved password in your browser. That’s risky, isn’t it?</p>
+<p>This is why when you try to use Chrome, it will ask you to unlock the keyring repeatedly. This ensures that only the person who knows the keyring’s password (i.e. the account password) can use the saved password in browser for logging in to their respective websites.</p>
+<p>If you keep on cancelling the prompt for keyring unlock, it will eventually go away and let you use the browser. However, the saved password won’t be unlocked and you’ll see ‘sync paused’ in Chromium/Chrome browsers.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-179" src="/wp-content/uploads/2021/04/sync-paused-keyring-ubuntu.jpg" alt="" width="799" height="259" srcset="/wp-content/uploads/2021/04/sync-paused-keyring-ubuntu.jpg 799w, /wp-content/uploads/2021/04/sync-paused-keyring-ubuntu-300x97.jpg 300w, /wp-content/uploads/2021/04/sync-paused-keyring-ubuntu-768x249.jpg 768w" sizes="(max-width: 799px) 100vw, 799px" /></p>
+<h3>If this keyring always exited, why you never saw it?</h3>
+<p>That’s a valid question if you have never seen this keyring thing in your Linux system.</p>
+<p>If you never used automatic login (or changed your account’s password), you might not even have realized that this feature exists.</p>
+<p>This is because when you login to your system with your password, your keyring is unlocked automatically with your account’s password.</p>
+<p>Ubuntu (and other distributions) asks for password for common admin tasks like modifying users, installing new software etc irrespective of whether you auto login or not. But for regular tasks like using a browser, it doesn’t ask for password because keyring is already unlocked.</p>
+<p>When you switch to automatic login, you don’t enter the password for login anymore. This means that the keyring is not unlocked and hence when you try to use a browser which uses the keyring feature, it will ask to unlock the keyring.</p>
+<h3>You can easily manage the keyring and passwords</h3>
+<p>Where is this keyring located? At the core, it’s a daemon (a program that runs automatically in the background).</p>
+<p>Don’t worry. You don’t have to ‘fight the daemon’ in the terminal. Most desktop environments come with a graphical application that interacts with this daemon. On KDE, there is KDE Wallet, on GNOME and others, it’s called Password and Keys (originally known as <a href="https://wiki.debian.org/Seahorse" target="_blank" rel="noreferrer noopener" aria-label="Seahorse (opens in a new tab)">Seahorse</a>).</p>
+<p>You can use this GUI application to see what application use the keyring to manage/lock passwords.</p>
+<p>As you can see, my system has the login keyring which is automatically created. There is also a keyrings for storing GPG and SSH keys. The <a href="https://help.ubuntu.com/lts/serverguide/certificates-and-security.html" target="_blank" rel="noreferrer noopener" aria-label="Certificates (opens in a new tab)">Certificates</a> is for keeping the certificates (like HTTPS certificates) issued by a certificate authority.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-180" src="/wp-content/uploads/2021/04/keyring-pasword-ubuntu.png" alt="" width="766" height="408" srcset="/wp-content/uploads/2021/04/keyring-pasword-ubuntu.png 766w, /wp-content/uploads/2021/04/keyring-pasword-ubuntu-300x160.png 300w" sizes="(max-width: 766px) 100vw, 766px" /></p>
+<p>You can also use this application to manually store passwords for website. For example, I created a new password-protected keyring called ‘Test’ and stored a password in this keyring manually.</p>
+<p>This is slightly better than keeping a list of passwords in a text file. At least in this case your passwords can be viewed only when you unlock the keyring with password.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-181" src="/wp-content/uploads/2021/04/saving-new-password-seahorse.png" alt="" width="780" height="496" srcset="/wp-content/uploads/2021/04/saving-new-password-seahorse.png 780w, /wp-content/uploads/2021/04/saving-new-password-seahorse-300x191.png 300w, /wp-content/uploads/2021/04/saving-new-password-seahorse-768x488.png 768w" sizes="(max-width: 780px) 100vw, 780px" /></p>
+<p>One potential problem here is that if you format your system, the manually saved passwords are definitely lost. Normally, you make backup of personal files, not of all the user specific data such as keyring files.</p>
+<p>There is way to handle that. The keyring data is usually stored in ~/.local/share/keyrings directory. You can see all the keyrings here but you cannot see its content directly. If you remove the password of the keyring (I’ll show the steps in later section of this article), you can read the content of the keyring like a regular text file. You can copy this unlocked keyring file entirely and import it in the Password and Keys application on some other Linux computer (running this application).</p>
+<p>So, let me summarize what you have learned so far:</p>
+<ul>
+<li>Most Linux has this ‘keyring feature’ installed and activated by default</li>
+<li>Each user on a system has its own keyring</li>
+<li>The keyring is normally locked with the account’s password</li>
+<li>Keyring is unlocked automatically when you login with your password</li>
+<li>For auto-login, the keyring is not unlocked and hence you are asked to unlock it when you try to use an application that uses keyring</li>
+<li>Not all browsers or application use the keyring feature</li>
+<li>There is a GUI application installed to interact with keyring</li>
+<li>You can use the keyring to manually store passwords in encrypted format</li>
+<li>You can change the keyring password on your own</li>
+<li>You can export (by unlocking the keyring first) and import it on some other computer to get your manually saved passwords</li>
+</ul>
+<h3>Related Posts</h3>
+<blockquote class="wp-embedded-content" data-secret="sAIxCm8p4N"><p><a href="/change-keyring-password-in-ubuntu/">How to Change keyring password in Ubuntu</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;How to Change keyring password in Ubuntu&#8221; &#8212; How To Do Stuff" src="/change-keyring-password-in-ubuntu/embed/#?secret=sAIxCm8p4N" data-secret="sAIxCm8p4N" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<blockquote class="wp-embedded-content" data-secret="d5q1hL3vEz"><p><a href="/disable-keyring-password-in-ubuntu/">How to disable keyring password in Ubuntu</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;How to disable keyring password in Ubuntu&#8221; &#8212; How To Do Stuff" src="/disable-keyring-password-in-ubuntu/embed/#?secret=d5q1hL3vEz" data-secret="d5q1hL3vEz" width="600" height="338" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>The post <a rel="nofollow" href="/use-ubuntu-keyring/">How to Use Keyring in Ubuntu</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to Install Apache with PHP-FPM in Ubuntu 20.04 / 18.04</title>
+		<link>/install-apache-php-fpm-ubuntu-18-04-20-04/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=install-apache-php-fpm-ubuntu-18-04-20-04</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Wed, 31 Mar 2021 10:01:33 +0000</pubDate>
+				<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Apache Configuration]]></category>
+		<category><![CDATA[FastCGI Process Manager]]></category>
+		<category><![CDATA[FPM]]></category>
+		<category><![CDATA[PHP-FPM]]></category>
+		<guid isPermaLink="false">/?p=161</guid>
+
+					<description><![CDATA[<p>PHP FPM (FastCGI Process Manager) is an alternative implementation of PHP FastCGI. It provides some additional features like Adaptive process spawning which is useful for sites. This tutorial will help you to install Apache with PHP-FPM/FastCGI on Ubuntu 20.04 system. In this tutorial, we are using PHP 7.4 and configure with Apache using PHP-FPM and &#8230; <a href="/install-apache-php-fpm-ubuntu-18-04-20-04/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/install-apache-php-fpm-ubuntu-18-04-20-04/">How to Install Apache with PHP-FPM in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter wp-image-167 size-full" src="/wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1.jpg" alt="Install Apache with PHP-FPM on Ubuntu 20" width="1024" height="576" srcset="/wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1.jpg 1024w, /wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1-300x169.jpg 300w, /wp-content/uploads/2021/03/How-to-Install-PHP-FPM-with-Apache-on-Ubuntu-18.04-Google-Cloud-1024x576-1-768x432.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></p>
+<p>PHP FPM (FastCGI Process Manager) is an alternative implementation of PHP FastCGI. It provides some additional features like Adaptive process spawning which is useful for sites. This tutorial will help you to install Apache with PHP-FPM/FastCGI on <a href="/category/ubuntu/">Ubuntu</a> 20.04 system. In this tutorial, we are using PHP 7.4 and configure with Apache using PHP-FPM and FastCGI.</p>
+<h2 class="heading1">Step 1 – Installing Apache</h2>
+<p><a href="/category/apache/">Apache</a> web server debian packages are available under the default repositories. Login to your Ubuntu system with sudo privileges account. Open a terminal. And run the following commands in it :</p>
+<pre>sudo apt update 
+sudo apt install apache2 libapache2-mod-fcgid
+</pre>
+<p>The above commands will install Apache and FastCGI module to your server.</p>
+<h2 class="heading1">Step 2 – Install PHP with FPM</h2>
+<p>Next, install PHP and PHP-FPM on your Ubuntu system. For this tutorial, we choose PHP 7.4 to install using</p>
+<p>For the PHP installation we recommend to use <a href="https://launchpad.net/~ondrej/+archive/ubuntu/php" target="_blank" rel="noopener noreferrer">ppa:ondrej/php</a> PPA. Execute below couple of commands to add the PPA to your system.</p>
+<pre>sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+</pre>
+<p>Then install PHP 7.4 (or required version) the latest version available on the day of writing this tutorial. Simply execute follows commands for the installation of PHP and PHP-FPM packages.</p>
+<pre>sudo apt update
+sudo apt install php7.4 php7.4-fpm
+</pre>
+<div class="ta_info"><strong>Note:- </strong>When you are using PHP-FPM. All the PHP modules configurations are residing under /etc/php/7.4/fpm directory. You can read more about enable/disable PHP modules.</div>
+<p>After installing the packages php7.4-fpm service will automatically be started. To make sure, type:</p>
+<pre><strong>sudo systemctl status php7.4-fpm</strong>
+
+● php7.4-fpm.service - The PHP 7.4 FastCGI Process Manager
+     Loaded: loaded (/lib/systemd/system/php7.4-fpm.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sat 2020-05-09 04:41:44 UTC; 19s ago
+       Docs: man:php-fpm7.4(8)
+    Process: 375077 ExecStartPost=/usr/lib/php/php-fpm-socket-helper install /run/php/php-fpm.sock /etc/php/7.4/fpm/pool.d/www.conf 74 (code=exited&gt;
+   Main PID: 375073 (php-fpm7.4)
+     Status: "Processes active: 0, idle: 2, Requests: 0, slow: 0, Traffic: 0req/sec"
+      Tasks: 3 (limit: 2283)
+     Memory: 9.3M
+     CGroup: /system.slice/php7.4-fpm.service
+             ├─375073 php-fpm: master process (/etc/php/7.4/fpm/php-fpm.conf)
+             ├─375075 php-fpm: pool www
+             └─375076 php-fpm: pool www
+
+May 09 04:41:43 tecadmin systemd[1]: Starting The PHP 7.4 FastCGI Process Manager...
+May 09 04:41:44 tecadmin systemd[1]: Started The PHP 7.4 FastCGI Process Manager.
+</pre>
+<h2 class="heading1">Step 3 – Apache Configuration</h2>
+<p>Now, You need to enable some of the Apache modules required for the FastCGI confiugration. You can enable the requird module by running command:</p>
+<pre>sudo a2enmod actions fcgid alias proxy_fcgi
+</pre>
+<p>Then configure Apache Virtual Host to run with FPM/FastCGI. For this tutorial, we use default VirtualHost. Edit VirtualHost host configuration file in a text editor. You can also create a new configuration as per your choice.</p>
+<pre>sudo vim /etc/apache2/sites-available/000-default.conf
+</pre>
+<p>Update the configuration as followings.</p>
+<p>&nbsp;</p>
+<div id="crayon-606445a0ad6ac359109522" class="crayon-syntax crayon-theme-github crayon-font-liberation-mono crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover">
+<div class="crayon-plain-wrap"></div>
+<div class="crayon-main">
+<table class="crayon-table">
+<tbody>
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="hide">
+<div class="crayon-nums-content">
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-1">1</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-2">2</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-3">3</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-4">4</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-5">5</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-6">6</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-7">7</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-8">8</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-9">9</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-10">10</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-11">11</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-12">12</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-13">13</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-14">14</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-15">15</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-16">16</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-17">17</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-18">18</div>
+<div class="crayon-num" data-line="crayon-606445a0ad6ac359109522-19">19</div>
+</div>
+</td>
+<td class="crayon-code">
+<div class="crayon-pre">
+<div id="crayon-606445a0ad6ac359109522-1" class="crayon-line"><span class="crayon-r ">&lt;</span><span class="crayon-r ">VirtualHost</span> <span class="crayon-e ">*:80</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-2" class="crayon-line"><span class="crayon-r">    ServerName</span> <span class="crayon-i ">example</span><span class="crayon-sy">.</span><span class="crayon-i ">com</span></div>
+<div id="crayon-606445a0ad6ac359109522-3" class="crayon-line"><span class="crayon-r">    ServerAlias</span> <span class="crayon-i ">www</span><span class="crayon-sy">.</span><span class="crayon-i ">example</span><span class="crayon-sy">.</span><span class="crayon-i ">com</span></div>
+<div id="crayon-606445a0ad6ac359109522-4" class="crayon-line"><span class="crayon-r">    DocumentRoot</span> /<span class="crayon-i ">var</span>/<span class="crayon-i ">www</span>/<span class="crayon-i ">html</span></div>
+<div id="crayon-606445a0ad6ac359109522-5" class="crayon-line"></div>
+<div id="crayon-606445a0ad6ac359109522-6" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">Directory</span> <span class="crayon-e ">/var/www/html</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-7" class="crayon-line"><span class="crayon-r">        Options</span> <span class="crayon-v ">-Indexes</span> +<span class="crayon-i ">FollowSymLinks</span> +<span class="crayon-i ">MultiViews</span></div>
+<div id="crayon-606445a0ad6ac359109522-8" class="crayon-line"><span class="crayon-r">        AllowOverride</span> <span class="crayon-i ">All</span></div>
+<div id="crayon-606445a0ad6ac359109522-9" class="crayon-line"><span class="crayon-r">        Require</span> <span class="crayon-i ">all</span> <span class="crayon-i ">granted</span></div>
+<div id="crayon-606445a0ad6ac359109522-10" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">/Directory</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-11" class="crayon-line"></div>
+<div id="crayon-606445a0ad6ac359109522-12" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">FilesMatch</span> <span class="crayon-e ">\.php$</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-13" class="crayon-line"><span class="crayon-h">        </span><span class="crayon-c"># 2.4.10+ can proxy to unix socket</span></div>
+<div id="crayon-606445a0ad6ac359109522-14" class="crayon-line"><span class="crayon-r">        SetHandler</span> <span class="crayon-s">&#8220;proxy:unix:/var/run/php/php7.4-fpm.sock|fcgi://localhost&#8221;</span></div>
+<div id="crayon-606445a0ad6ac359109522-15" class="crayon-line"><span class="crayon-h">    </span><span class="crayon-r ">&lt;</span><span class="crayon-r ">/FilesMatch</span><span class="crayon-r ">&gt;</span></div>
+<div id="crayon-606445a0ad6ac359109522-16" class="crayon-line"></div>
+<div id="crayon-606445a0ad6ac359109522-17" class="crayon-line"><span class="crayon-r">    ErrorLog</span> <span class="crayon-sy">$</span><span class="crayon-sy">{</span><span class="crayon-i ">APACHE_LOG_DIR</span><span class="crayon-sy">}</span>/<span class="crayon-i ">error</span><span class="crayon-sy">.</span><span class="crayon-i ">log</span></div>
+<div id="crayon-606445a0ad6ac359109522-18" class="crayon-line"><span class="crayon-r">    CustomLog</span> <span class="crayon-sy">$</span><span class="crayon-sy">{</span><span class="crayon-i ">APACHE_LOG_DIR</span><span class="crayon-sy">}</span>/<span class="crayon-i ">access</span><span class="crayon-sy">.</span><span class="crayon-i ">log</span> <span class="crayon-i ">combined</span></div>
+<div id="crayon-606445a0ad6ac359109522-19" class="crayon-line"><span class="crayon-r ">&lt;</span><span class="crayon-r ">/VirtualHost</span><span class="crayon-r ">&gt;</span></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>Save your changes to the configuration file and restart Apache to reload the changes.</p>
+<pre>sudo systemctl restart apache2
+</pre>
+<h2 class="heading1">Step 4 – Verify Setup</h2>
+<p>Apache with PHP-FPM configuration has been done. Now all the PHP files will be run with the FPM.</p>
+<p>To verify these settigns, create a PHP script with <strong>phpinfo()</strong> function and place it to your server document root. Use below command to create file:</p>
+<pre>echo "<strong>&lt;?php phpinfo(); ?&gt;</strong>" &gt; /var/www/html/info.php
+</pre>
+<p>Then access the info.php using server IP address (for default VirtualHost) or your configured domain in Apache VirtualHost.</p>
+<p><img decoding="async" class="aligncenter wp-image-162 size-full" src="/wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04.png" alt="" width="988" height="636" srcset="/wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04.png 988w, /wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04-300x193.png 300w, /wp-content/uploads/2021/03/apache-php-fpm-setup-ubuntu20-04-768x494.png 768w" sizes="(max-width: 988px) 100vw, 988px" /></p>
+<p>The post <a rel="nofollow" href="/install-apache-php-fpm-ubuntu-18-04-20-04/">How to Install Apache with PHP-FPM in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How To Install Linux, Nginx, MySQL, PHP (LEMP stack)</title>
+		<link>/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=install-linux-nginx-mysql-php-lemp-stack-on-ubuntu</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Fri, 19 Feb 2021 08:49:43 +0000</pubDate>
+				<category><![CDATA[Cloud Computing]]></category>
+		<category><![CDATA[Installation Guide]]></category>
+		<category><![CDATA[LEMP Installation steps]]></category>
+		<category><![CDATA[LEMP stack installation guide]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Tutorial]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[apt install]]></category>
+		<category><![CDATA[install mysql ubuntu 20.04]]></category>
+		<category><![CDATA[install php ubuntu 20.04]]></category>
+		<category><![CDATA[LEMP]]></category>
+		<category><![CDATA[LEMP installation]]></category>
+		<category><![CDATA[Mysql]]></category>
+		<category><![CDATA[Nginx]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[Ubuntu 20.04]]></category>
+		<guid isPermaLink="false">/?p=152</guid>
+
+					<description><![CDATA[<p>LEMP installation : Ubuntu 20.04 This guide demonstrates how to install a LEMP stack on an Ubuntu 20.04 server. The Ubuntu operating system takes care of the first requirement. We will describe how to get the rest of the components up and running. What is LEMP ? The LEMP software stack serves dynamic web pages &#8230; <a href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu/">How To Install Linux, Nginx, MySQL, PHP (LEMP stack)</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter wp-image-154 size-full" title="Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu" src="/wp-content/uploads/2021/02/How-To-Install-Linux-Nginx-MySQL-PHP-LEMP-stack-on-Ubuntu-18.04-01-1163x608-1.jpg" alt="Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu" width="1163" height="608" srcset="/wp-content/uploads/2021/02/How-To-Install-Linux-Nginx-MySQL-PHP-LEMP-stack-on-Ubuntu-18.04-01-1163x608-1.jpg 1163w, /wp-content/uploads/2021/02/How-To-Install-Linux-Nginx-MySQL-PHP-LEMP-stack-on-Ubuntu-18.04-01-1163x608-1-300x157.jpg 300w, /wp-content/uploads/2021/02/How-To-Install-Linux-Nginx-MySQL-PHP-LEMP-stack-on-Ubuntu-18.04-01-1163x608-1-1024x535.jpg 1024w, /wp-content/uploads/2021/02/How-To-Install-Linux-Nginx-MySQL-PHP-LEMP-stack-on-Ubuntu-18.04-01-1163x608-1-768x401.jpg 768w, /wp-content/uploads/2021/02/How-To-Install-Linux-Nginx-MySQL-PHP-LEMP-stack-on-Ubuntu-18.04-01-1163x608-1-800x418.jpg 800w" sizes="(max-width: 1163px) 100vw, 1163px" /></p>
+<h3>LEMP installation : Ubuntu 20.04</h3>
+<p>This guide demonstrates how to install a <a href="/tag/lemp/">LEMP</a> stack on an <a href="/tag/ubuntu-20-04/">Ubuntu 20.04</a> server. The Ubuntu operating system takes care of the first requirement. We will describe how to get the rest of the components up and running.</p>
+<h3 id="introduction">What is LEMP ?</h3>
+<p>The LEMP software stack serves dynamic web pages and web applications written in PHP. This is an acronym that describes a <strong>L</strong>inux operating system, with an Nginx (pronounced like “<strong>E</strong>ngine-X”) web server. The <strong>M</strong>ySQL database  stores backend data and <strong>P</strong>HP handles the dynamic processing.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>In order to complete this tutorial, you will need access to an Ubuntu 20.04 server as a regular, non-root <code>sudo</code> user, and a firewall enabled on your server. To set this up, you can follow our initial server setup guide for <a href="/tag/ubuntu-20-04/">Ubuntu 20.04</a>.</p>
+<h2 id="step-1-–-installing-the-nginx-web-server">Step 1 – Installing the Nginx Web Server</h2>
+<p>In order to display web pages to our site visitors, we are going to employ <a href="/tag/nginx/">Nginx</a>, a high-performance web server. We’ll use the <code>apt</code> package manager to obtain this software.</p>
+<p>Since this is our first time using <code>apt</code> for this session, start off by updating your server’s package index. Following that, you can use <code>apt install</code> to get Nginx installed:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">apt</span> update</li>
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> nginx</li>
+</ul>
+</div>
+</div>
+<p>When prompted, enter <code>Y</code> to confirm that you want to install Nginx. The Nginx web server will be active and running on your Ubuntu 20.04 server, after the installation is complete.</p>
+<p>If you have the <code>ufw</code> firewall enabled, as recommended in our initial server setup guide, you will need to allow connections to Nginx. Nginx registers a few different UFW application profiles upon installation. To check which UFW profiles are available, run:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> ufw app list</li>
+</ul>
+</div>
+</div>
+<div class="secondary-code-label " title="Output">Output</div>
+<pre class="code-pre "><code>Available applications:
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+  OpenSSH
+</code></pre>
+<p>You should enable the most restrictive profile. It will still allow the traffic you need. Since you haven’t configured SSL for your server in this guide, you will only need to allow regular HTTP traffic on port <code>80</code>.</p>
+<p>Enable this by typing:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> ufw allow <span class="token string">&#8216;Nginx HTTP&#8217;</span></li>
+</ul>
+</div>
+</div>
+<p>You can verify the change by running:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> ufw status</li>
+</ul>
+</div>
+</div>
+<p>This command’s output will show that HTTP traffic is now allowed:</p>
+<div class="secondary-code-label " title="Output">Output</div>
+<pre class="code-pre "><code>Status: active
+
+To                         Action      From
+--                         ------      ----
+OpenSSH                    ALLOW       Anywhere
+<span class="highlight">Nginx HTTP                 ALLOW       Anywhere</span>
+OpenSSH (v6)               ALLOW       Anywhere (v6)
+<span class="highlight">Nginx HTTP (v6)            ALLOW       Anywhere (v6)</span>
+</code></pre>
+<p>With the new firewall rule added, you can test if the server is up and running by accessing your server’s domain name or public IP address in your web browser.</p>
+<p>If you do not have a domain name pointed at your server and you do not know your server’s public IP address, you can find it by running the following command:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">ip</span> addr show eth0 <span class="token operator">|</span> <span class="token function">grep</span> inet <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">&#8216;{ print <span class="token variable">$2</span>; }&#8217;</span> <span class="token operator">|</span> <span class="token function">sed</span> <span class="token string">&#8216;s/\/.*$//&#8217;</span></li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>This will print out a few IP addresses. You can try each of them in turn in your web browser.</p>
+<p>As an alternative, you can check which IP address is accessible, as viewed from other locations on the internet:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">curl</span> -4 icanhazip.com</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Type the address that you receive in your web browser and it will take you to Nginx’s default landing page:</p>
+<pre class="code-pre "><code>http://<span class="highlight">server_domain_or_IP</span>
+</code></pre>
+<p><img decoding="async" src="https://assets.digitalocean.com/articles/lemp_ubuntu2004/nginx_default.png" alt="Nginx default page" /></p>
+<p>If you see this page, it means you have successfully installed Nginx and enabled HTTP traffic for your web server.</p>
+<h2 id="step-2-—-installing-mysql">Step 2 — Installing MySQL</h2>
+<p>Now that you have a web server up and running, you need to install the database system to be able to store and manage data for your site. MySQL is a popular database management system used within PHP environments.</p>
+<p>Again, use <code>apt</code> to acquire and install this software:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> mysql-server</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>When prompted, confirm installation by typing <code>Y</code>, and then <code>ENTER</code>.</p>
+<p>When the installation is finished, it’s recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system. Start the interactive script by running:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> mysql_secure_installation</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>This will ask if you want to configure the <code>VALIDATE PASSWORD PLUGIN</code>.</p>
+<p><span class="note"><strong>Note:</strong> Enabling this feature is something of a judgment call. If enabled, passwords which don’t match the specified criteria will be rejected by MySQL with an error. It is safe to leave validation disabled, but you should always use strong, unique passwords for database credentials.<br />
+</span></p>
+<p>Answer <code>Y</code> for yes, or anything else to continue without enabling.</p>
+<pre class="code-pre "><code>VALIDATE PASSWORD PLUGIN can be used to test passwords
+and improve security. It checks the strength of password
+and allows the users to set only those passwords which are
+secure enough. Would you like to setup VALIDATE PASSWORD plugin?
+
+Press y|Y for Yes, any other key for No:
+</code></pre>
+<p>If you answer “yes”, you’ll be asked to select a level of password validation. Keep in mind that if you enter <code>2</code> for the strongest level, you will receive errors when attempting to set any password which does not contain numbers, upper and lowercase letters, and special characters, or which is based on common dictionary words.</p>
+<pre class="code-pre "><code>There are three levels of password validation policy:
+
+LOW    Length &gt;= 8
+MEDIUM Length &gt;= 8, numeric, mixed case, and special characters
+STRONG Length &gt;= 8, numeric, mixed case, special characters and dictionary              file
+
+Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG: <span class="highlight">1</span>
+</code></pre>
+<p>Regardless of whether you chose to set up the <code>VALIDATE PASSWORD PLUGIN</code>, your server will next ask you to select and confirm a password for the MySQL <strong>root</strong> user. This is not to be confused with the <strong>system root</strong>. The <strong>database root</strong> user is an administrative user with full privileges over the database system. Even though the default authentication method for the MySQL root user dispenses the use of a password, <strong>even when one is set</strong>, you should define a strong password here as an additional safety measure. We’ll talk about this in a moment.</p>
+<p>If you enabled password validation, you’ll be shown the password strength for the root password you just entered and your server will ask if you want to continue with that password. If you are happy with your current password, enter <code>Y</code> for “yes” at the prompt:</p>
+<pre class="code-pre "><code>Estimated strength of the password: <span class="highlight">100</span> 
+Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) : <span class="highlight">y</span>
+</code></pre>
+<p>For the rest of the questions, press <code>Y</code> and hit the <code>ENTER</code> key at each prompt. This will remove some anonymous users and the test database, disable remote root logins, and load these new rules so that MySQL immediately respects the changes you have made.</p>
+<p>When you’re finished, test if you’re able to log in to the MySQL console by typing:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> mysql</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>This will connect to the MySQL server as the administrative database user <strong>root</strong>, which is inferred by the use of <code>sudo</code> when running this command. You should see output like this:</p>
+<div class="secondary-code-label " title="Output">Output</div>
+<pre class="code-pre "><code>Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 22
+Server version: 8.0.19-0ubuntu5 (Ubuntu)
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql&gt; 
+</code></pre>
+<p>To exit the MySQL console, type:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" style="box-sizing: border-box; margin: 0px 0px 0px -5px; padding: 0px; list-style: outside none none; white-space: pre;" data-prefix="mysql&gt;"><span class="token builtin class-name">exit</span></li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Notice that you didn’t need to provide a password to connect as the <strong>root</strong> user, even though you have defined one when running the <code>mysql_secure_installation</code> script. That is because the default authentication method for the administrative MySQL user is <code>unix_socket</code> instead of <code>password</code>. Even though this might look like a security concern at first, it makes the database server more secure because the only users allowed to log in as the <strong>root</strong> MySQL user are the system users with sudo privileges connecting from the console or through an application running with the same privileges. In practical terms, that means you won’t be able to use the administrative database <strong>root</strong> user to connect from your PHP application. Setting a password for the <strong>root</strong> MySQL account works as a safeguard, in case the default authentication method is changed from <code>unix_socket</code> to <code>password</code>.</p>
+<p>For increased security, it’s best to have dedicated user accounts with less expansive privileges set up for every database, especially if you plan on having multiple databases hosted on your server.</p>
+<p><span class="note"><strong>Note:</strong> At the time of this writing, the native MySQL PHP library <code>mysqlnd</code> <a href="https://www.php.net/manual/en/ref.pdo-mysql.php">doesn’t support</a> <code>caching_sha2_authentication</code>, the default authentication method for MySQL 8. For that reason, when creating database users for PHP applications on MySQL 8, you’ll need to make sure they’re configured to use <code>mysql_native_password</code> instead. We’ll demonstrate how to do that in Step 6.<br />
+</span></p>
+<p>Your MySQL server is now installed and secured. Next, we’ll install PHP, the final component in the LEMP stack.</p>
+<h2 id="step-3-–-installing-php">Step 3 – Installing PHP</h2>
+<p>You have Nginx installed to serve your content and MySQL installed to store and manage your data. Now you can install PHP to process code and generate dynamic content for the web server.</p>
+<p>While Apache embeds the PHP interpreter in each request, Nginx requires an external program to handle PHP processing and act as a bridge between the PHP interpreter itself and the web server. This allows for a better overall performance in most PHP-based websites, but it requires additional configuration. You’ll need to install <code>php-fpm</code>, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. Additionally, you’ll need <code>php-mysql</code>, a PHP module that allows PHP to communicate with MySQL-based databases. Core PHP packages will automatically be installed as dependencies.</p>
+<p>To install the <code>php-fpm</code> and <code>php-mysql</code> packages, run:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> php-fpm php-mysql</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>When prompted, type <code>Y</code> and <code>ENTER</code> to confirm installation.</p>
+<p>You now have your PHP components installed. Next, you’ll configure Nginx to use them.</p>
+<h2 id="step-4-—-configuring-nginx-to-use-the-php-processor">Step 4 — Configuring Nginx to Use the PHP Processor</h2>
+<p>When using the Nginx web server, we can create <em>server blocks</em> (similar to virtual hosts in Apache) to encapsulate configuration details and host more than one domain on a single server. In this guide, we’ll use <strong>your_domain</strong> as an example domain name. To learn more about setting up a domain name with DigitalOcean, see our introduction to DigitalOcean DNS.</p>
+<p>On Ubuntu 20.04, Nginx has one server block enabled by default and is configured to serve documents out of a directory at <code>/var/www/html</code>. While this works well for a single site, it can become difficult to manage if you are hosting multiple sites. Instead of modifying <code>/var/www/html</code>, we’ll create a directory structure within <code>/var/www</code> for the <strong>your_domain</strong> website, leaving <code>/var/www/html</code> in place as the default directory to be served if a client request doesn’t match any other sites.</p>
+<p>Create the root web directory for <strong>your_domain</strong> as follows:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">mkdir</span> /var/www/<span class="highlight">your_domain</span></li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Next, assign ownership of the directory with the $USER environment variable, which will reference your current system user:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">chown</span> -R <span class="token environment constant">$USER</span><span class="token builtin class-name">:</span><span class="token environment constant">$USER</span> /var/www/<span class="highlight">your_domain</span></li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Then, open a new configuration file in Nginx’s <code>sites-available</code> directory using your preferred command-line editor. Here, we’ll use <code>nano</code>:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">nano</span> /etc/nginx/sites-available/<span class="highlight">your_domain</span></li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>This will create a new blank file. Paste in the following bare-bones configuration:</p>
+<div class="code-label " title="/etc/nginx/sites-available/your_domain">/etc/nginx/sites-available/your_domain</div>
+<div class="code-toolbar">
+<div class="context">
+<pre class="code-pre language-bash"><code class="code-highlight language-bash">server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name <span class="highlight">your_domain</span> www.<span class="highlight">your_domain</span><span class="token punctuation">;</span>
+    root /var/www/<span class="highlight">your_domain</span><span class="token punctuation">;</span>
+
+    index index.html index.htm index.php<span class="token punctuation">;</span>
+
+    location / <span class="token punctuation">{</span>
+        try_files <span class="token variable">$uri</span> <span class="token variable">$uri</span>/ <span class="token operator">=</span><span class="token number">404</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    location ~ <span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+        include snippets/fastcgi-php.conf<span class="token punctuation">;</span>
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock<span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+
+    location ~ /<span class="token punctuation">\</span>.ht <span class="token punctuation">{</span>
+        deny all<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Here’s what each of these directives and location blocks do:</p>
+<ul>
+<li><code>listen</code> — Defines what port Nginx will listen on. In this case, it will listen on port <code>80</code>, the default port for HTTP.</li>
+<li><code>root</code> — Defines the document root where the files served by this website are stored.</li>
+<li><code>index</code> — Defines in which order Nginx will prioritize index files for this website. It is a common practice to list <code>index.html</code> files with a higher precedence than <code>index.php</code> files to allow for quickly setting up a maintenance landing page in PHP applications. You can adjust these settings to better suit your application needs.</li>
+<li><code>server_name</code> — Defines which domain names and/or IP addresses this server block should respond for. <strong>Point this directive to your server’s domain name or public IP address.</strong></li>
+<li><code>location /</code> — The first location block includes a <code>try_files</code> directive, which checks for the existence of files or directories matching a URI request. If Nginx cannot find the appropriate resource, it will return a 404 error.</li>
+<li><code>location ~ \.php$</code> — This location block handles the actual PHP processing by pointing Nginx to the <code>fastcgi-php.conf</code> configuration file and the <code>php7.4-fpm.sock</code> file, which declares what socket is associated with <code>php-fpm</code>.</li>
+<li><code>location ~ /\.ht</code> — The last location block deals with <code>.htaccess</code> files, which Nginx does not process. By adding the <code>deny all</code> directive, if any <code>.htaccess</code> files happen to find their way into the document root ,they will not be served to visitors.</li>
+</ul>
+<p>When you’re done editing, save and close the file. If you’re using <code>nano</code>, you can do so by typing <code>CTRL+X</code> and then <code>y</code> and <code>ENTER</code> to confirm.</p>
+<p>Activate your configuration by linking to the config file from Nginx’s <code>sites-enabled</code> directory:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">ln</span> -s /etc/nginx/sites-available/<span class="highlight">your_domain</span> /etc/nginx/sites-enabled/</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Then, unlink the default configuration file from the <code>/sites-enabled/</code> directory:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> unlink /etc/nginx/sites-enabled/default</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p><strong>Note</strong>: If you ever need to restore the default configuration, you can do so by recreating the symbolic link, like this:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> <span class="token function">ln</span> -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>This will tell Nginx to use the configuration next time it is reloaded. You can test your configuration for syntax errors by typing:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> nginx -t</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>If any errors are reported, go back to your configuration file to review its contents before continuing.</p>
+<p>When you are ready, reload Nginx to apply the changes:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">sudo</span> systemctl reload nginx</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Your new website is now active, but the web root <code>/var/www/<span class="highlight">your_domain</span></code> is still empty. Create an <code>index.html</code> file in that location so that we can test that your new server block works as expected:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">nano</span> /var/www/<span class="highlight">your_domain</span>/index.html</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Include the following content in this file:</p>
+<div class="code-label " title="/var/www/your_domain/index.html">/var/www/your_domain/index.html</div>
+<div class="code-toolbar">
+<div class="context">
+<pre class="code-pre language-bash"><code class="code-highlight language-bash"><span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span><span class="highlight">your_domain</span> website<span class="token operator">&lt;</span>/title<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/head<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>h<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>Hello World<span class="token operator">!</span><span class="token operator">&lt;</span>/h<span class="token operator"><span class="token file-descriptor important">1</span>&gt;</span>
+
+    <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>This is the landing page of <span class="token operator">&lt;</span>strong<span class="token operator">&gt;</span><span class="highlight">your_domain</span><span class="token operator">&lt;</span>/strong<span class="token operator">&gt;</span>.<span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/html<span class="token operator">&gt;</span></code></pre>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Now go to your browser and access your server’s domain name or IP address, as listed within the <code>server_name</code> directive in your server block configuration file:</p>
+<pre class="code-pre "><code>http://<span class="highlight">server_domain_or_IP</span>
+</code></pre>
+<p>You’ll see a page like this:</p>
+<p><img decoding="async" src="https://assets.digitalocean.com/articles/lemp_ubuntu2004/landing_page.png" alt="Nginx server block" /></p>
+<p>If you see this page, it means your Nginx server block is working as expected.</p>
+<p>You can leave this file in place as a temporary landing page for your application until you set up an <code>index.php</code> file to replace it. Once you do that, remember to remove or rename the <code>index.html</code> file from your document root, as it would take precedence over an <code>index.php</code> file by default.</p>
+<p>Your LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle <code>.php</code> files within your newly configured website.</p>
+<h2 id="step-5-–testing-php-with-nginx">Step 5 –Testing PHP with Nginx</h2>
+<p>Your LEMP stack should now be completely set up. You can test it to validate that Nginx can correctly hand <code>.php</code> files off to your PHP processor.</p>
+<p>You can do this by creating a test PHP file in your document root. Open a new file called <code>info.php</code> within your document root in your text editor:</p>
+<div class="code-toolbar">
+<div class="context">
+<ul class="prefixed">
+<li class="line" data-prefix="$"><span class="token function">nano</span> /var/www/<span class="highlight">your_domain</span>/info.php</li>
+</ul>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>Type or paste the following lines into the new file. This is valid PHP code that will return information about your server:</p>
+<div class="code-label " title="/var/www/your_domain/info.php">/var/www/your_domain/info.php</div>
+<div class="code-toolbar">
+<div class="context">
+<pre class="code-pre language-bash"><code class="code-highlight language-bash"><span class="token operator">&lt;</span>?php
+phpinfo<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+</div>
+<div class="toolbar">
+<div class="toolbar-item"></div>
+</div>
+</div>
+<p>When you are finished, save and close the file by typing <code>CTRL</code>+<code>X</code> and then <code>y</code> and <code>ENTER</code> to confirm.</p>
+<p>You can now access this page in your web browser by visiting the domain name or public IP address you’ve set up in your Nginx configuration file, followed by <code>/info.php</code>:</p>
+<pre class="code-pre "><code>http://<span class="highlight">server_domain_or_IP</span>/info.php
+</code></pre>
+<p>You will see a web page containing detailed information about your server.</p>
+<p>Also read : <a href="/back-up-and-restore-a-mysql-database-easy-tutorial/">How to Back Up and Restore a MySQL Database</a></p>
+<p>The post <a rel="nofollow" href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu/">How To Install Linux, Nginx, MySQL, PHP (LEMP stack)</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to List Services in Ubuntu 20.04 / Ubuntu 18.04 using command</title>
+		<link>/ubuntu-list-services-command/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=ubuntu-list-services-command</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Sun, 24 Jan 2021 15:59:19 +0000</pubDate>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Linux]]></category>
+		<category><![CDATA[CLI command line interface]]></category>
+		<category><![CDATA[Linux Service command]]></category>
+		<category><![CDATA[Linux services list command]]></category>
+		<category><![CDATA[List all services on ubuntu server]]></category>
+		<category><![CDATA[List all services terminal command]]></category>
+		<category><![CDATA[List services in linux ubuntu]]></category>
+		<category><![CDATA[list services ubuntu 20.04]]></category>
+		<category><![CDATA[List Ubuntu Services]]></category>
+		<category><![CDATA[Service status all]]></category>
+		<category><![CDATA[systemctl command]]></category>
+		<category><![CDATA[systemctl list-units]]></category>
+		<category><![CDATA[systemd]]></category>
+		<category><![CDATA[ubuntu 20 list services]]></category>
+		<guid isPermaLink="false">/?p=409</guid>
+
+					<description><![CDATA[<p>In this tutorial we are going to learn how to list services in Ubuntu 20 using the command line interface. We will see how we can list running services and services that are not running. List Ubuntu Services with Service command The service  &#8211;status-all command will list all services on your Ubuntu Server (Both running services and &#8230; <a href="/ubuntu-list-services-command/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/ubuntu-list-services-command/">How to List Services in Ubuntu 20.04 / Ubuntu 18.04 using command</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img decoding="async" class="aligncenter size-full wp-image-170" src="/wp-content/uploads/2020/06/List-services-in-linux.png" alt="List Ubuntu Services with Service command" width="746" height="396" srcset="/wp-content/uploads/2020/06/List-services-in-linux.png 746w, /wp-content/uploads/2020/06/List-services-in-linux-300x159.png 300w" sizes="(max-width: 746px) 100vw, 746px" /></p>
+<p>In this tutorial we are going to learn <strong>how to list services in Ubuntu 20</strong> using the <a href="/tag/cli-command-line-interface/">command line interface</a>. We will see how we can list running services and services that are not running.</p>
+<h2>List Ubuntu Services with Service command</h2>
+<p>The <span class="code">service  &#8211;status-all</span> command will list all services on your Ubuntu Server (Both running services and Not running Services).</p>
+<pre><code class="language-none">service  --status-all</code></pre>
+<p>This will show all available services on your Ubuntu System. <span class="boldf">The status is [ + ] for running services, [ &#8211; ] for stopped services.</span></p>
+<p><img decoding="async" class="aligncenter wp-image-410 size-full" src="/wp-content/uploads/2021/04/ubuntu-list-service.png" alt="List Ubuntu Services with Service command" width="699" height="308" srcset="/wp-content/uploads/2021/04/ubuntu-list-service.png 699w, /wp-content/uploads/2021/04/ubuntu-list-service-300x132.png 300w" sizes="(max-width: 699px) 100vw, 699px" /></p>
+<p>Using the grep command, we can filter the output to show only the running services.</p>
+<pre><code class="language-none">service --status-all | grep '\[ + \]'</code></pre>
+<p>To list ubuntu services that are not running, Type,</p>
+<pre><code class="language-none">service --status-all | grep '\[ - \]'</code></pre>
+<p>The service command can be used to list services in all Ubuntu releases, including (Ubuntu 20.04, 18.04, 16.04, and 14.04).</p>
+<p>&nbsp;</p>
+<h2>List Services with systemctl command</h2>
+<p>Since Ubuntu 15, the services are managed by the systemd. With systemd we can use <span class="code">systemctl</span> command to get information about running services in our Ubuntu system.</p>
+<p>To list all running services on <a class="blink" href="/category/ubuntu-linux/">Ubuntu</a>, Type:</p>
+<pre><code class="language-none">systemctl list-units</code></pre>
+<p>The output of the command will look something like this:</p>
+<pre><code class="language-none">UNIT                      LOAD   ACTIVE SUB       DESCRIPTION
+
+apache2.service           loaded active running   LSB: Apache2 web server
+apparmor.service          loaded active exited    LSB: AppArmor initialization
+cron.service              loaded active running   Regular 
+networking.service        loaded active exited    Raise network interfaces
+nmbd.service              loaded active running   LSB: start Samba NetBIOS nameserver (nmbd)
+smbd.service              loaded active running   LSB: start Samba SMB/CIFS daemon (smbd)
+ssh.service               loaded active running   OpenBSD 
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+</code></pre>
+<p>To list all services, including inactive units, Type:</p>
+<pre><code class="language-none">systemctl list-units -a</code></pre>
+<p>To List inactive unit, Type:</p>
+<pre><code class="language-none">systemctl list-units -a --state=inactive</code></pre>
+<p>The systemctl command does not work for Ubuntu 14.04 and earlier releases, instead use the <span class="code">service  &#8211;status-all</span> command mentioned above.</p>
+<p>Also read: <a href="/how-to-list-all-services-in-ubuntu-18-20/" target="_blank" rel="noopener">How to list all services in Ubuntu 20.04</a></p>
+<p>The post <a rel="nofollow" href="/ubuntu-list-services-command/">How to List Services in Ubuntu 20.04 / Ubuntu 18.04 using command</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

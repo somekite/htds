@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Kanban Archives - How To Do Stuff</title>
+	<atom:link href="/tag/kanban/feed/" rel="self" type="application/rss+xml" />
+	<link>/tag/kanban/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Mon, 28 Nov 2022 12:29:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Kanban Archives - How To Do Stuff</title>
+	<link>/tag/kanban/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to sort Trello Cards List by Due date or Created date</title>
+		<link>/how-to-sort-trello-cards-by-date/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-sort-trello-cards-by-date</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Fri, 18 Nov 2022 10:31:48 +0000</pubDate>
+				<category><![CDATA[Collaboration Tools]]></category>
+		<category><![CDATA[Project Management]]></category>
+		<category><![CDATA[Atlassian community]]></category>
+		<category><![CDATA[collaboration tool]]></category>
+		<category><![CDATA[Kanban]]></category>
+		<category><![CDATA[list-making application]]></category>
+		<category><![CDATA[Ordering trello list]]></category>
+		<category><![CDATA[project organiser]]></category>
+		<category><![CDATA[Task Management]]></category>
+		<category><![CDATA[To-do List management]]></category>
+		<category><![CDATA[Trello help]]></category>
+		<category><![CDATA[trello list sort by date]]></category>
+		<category><![CDATA[Trello user guide]]></category>
+		<category><![CDATA[Using trello lists]]></category>
+		<guid isPermaLink="false">/?p=1262</guid>
+
+					<description><![CDATA[<p>Way to sort Trello Cards by date created / due date It is not uncommon to add many different cards on different boards in a short period of time. It would be easiest if we could sort cards by date created. But is there a way to do this on Trello ? The answer is &#8230; <a href="/how-to-sort-trello-cards-by-date/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/how-to-sort-trello-cards-by-date/">How to sort Trello Cards List by Due date or Created date</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><img data-dominant-color="d5bbe0" data-has-transparency="true" style="--dominant-color: #d5bbe0;" decoding="async" class="has-transparency aligncenter wp-image-1282 size-large" src="/wp-content/uploads/2022/11/trello-board-1024x639.png" alt="How to sort trello cards by date" width="600" height="374" srcset="/wp-content/uploads/2022/11/trello-board-1024x639.png 1024w, /wp-content/uploads/2022/11/trello-board-300x187.png 300w, /wp-content/uploads/2022/11/trello-board-768x479.png 768w, /wp-content/uploads/2022/11/trello-board-1536x958.png 1536w, /wp-content/uploads/2022/11/trello-board.png 1824w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<h3>Way to sort Trello Cards by date created / due date</h3>
+<p>It is not uncommon to add many different cards on different boards in a short period of time. It would be easiest if we could <strong>sort cards by date created</strong>. But is there a way to do this on Trello ? <strong>The answer is Yes</strong>. You can <strong>sort trello cards by date</strong> created ascending or descending order. And even you can sort them by card name (alphabetically) too.</p>
+<h3>Steps to sort Trello cards by due date / Ordering Trello cards list by created date</h3>
+<ol>
+<li>Select the ellipses on any list in trello.<img data-dominant-color="d4d2e1" data-has-transparency="false" style="--dominant-color: #d4d2e1;" decoding="async" class="not-transparent aligncenter size-full wp-image-1277" src="/wp-content/uploads/2022/11/trello-card-sort-step1.png" alt="" width="272" height="181" srcset="/wp-content/uploads/2022/11/trello-card-sort-step1.png 272w, /wp-content/uploads/2022/11/trello-card-sort-step1-75x50.png 75w" sizes="(max-width: 272px) 100vw, 272px" /></li>
+<li>You will see the option &#8220;Sort by&#8230;&#8221;. Click on that option.<img data-dominant-color="d4d3e0" data-has-transparency="false" style="--dominant-color: #d4d3e0;" decoding="async" class="not-transparent aligncenter size-full wp-image-1278" src="/wp-content/uploads/2022/11/trello-card-sort-step2.png" alt="" width="272" height="181" srcset="/wp-content/uploads/2022/11/trello-card-sort-step2.png 272w, /wp-content/uploads/2022/11/trello-card-sort-step2-75x50.png 75w" sizes="(max-width: 272px) 100vw, 272px" /></li>
+<li>From here, you can sort cards based on age, the card name, or by a custom field.</li>
+</ol>
+<p>&nbsp;</p>
+<p>For the reference, check out the <a href="https://community.atlassian.com/t5/Trello-questions/Is-there-a-way-to-sort-Trello-Cards-by-date-created/qaq-p/1891603">Atlassian Community answer</a></p>
+<p>Also read:</p>
+<p><a href="/how-to-disable-eval-function-in-php/">How to disable eval function in PHP</a></p>
+<p>The post <a rel="nofollow" href="/how-to-sort-trello-cards-by-date/">How to sort Trello Cards List by Due date or Created date</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

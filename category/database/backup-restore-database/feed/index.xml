@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Backup &amp; Restore Database Archives - How To Do Stuff</title>
+	<atom:link href="/category/database/backup-restore-database/feed/" rel="self" type="application/rss+xml" />
+	<link>/category/database/backup-restore-database/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Sun, 16 Oct 2022 12:18:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Backup &amp; Restore Database Archives - How To Do Stuff</title>
+	<link>/category/database/backup-restore-database/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to Back Up and Restore a MySQL Database : Easy Tutorial</title>
+		<link>/back-up-and-restore-a-mysql-database-easy-tutorial/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=back-up-and-restore-a-mysql-database-easy-tutorial</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Tue, 11 May 2021 12:30:05 +0000</pubDate>
+				<category><![CDATA[Backup & Restore Database]]></category>
+		<category><![CDATA[Database]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[MySQL]]></category>
+		<category><![CDATA[MySQL backup & restore]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Backup]]></category>
+		<category><![CDATA[database backup]]></category>
+		<category><![CDATA[database restore]]></category>
+		<category><![CDATA[Easy backup mysql steps]]></category>
+		<category><![CDATA[Easy mysql backup]]></category>
+		<category><![CDATA[Easy mysql restore]]></category>
+		<category><![CDATA[Easy restore mysql steps]]></category>
+		<category><![CDATA[How to backup mysql database]]></category>
+		<category><![CDATA[How to backup mysql database in ubuntu]]></category>
+		<category><![CDATA[How to restore mysql database]]></category>
+		<category><![CDATA[Mysql backup]]></category>
+		<category><![CDATA[Mysql restore]]></category>
+		<category><![CDATA[Restore]]></category>
+		<guid isPermaLink="false">/?p=485</guid>
+
+					<description><![CDATA[<p>It is essential to important to make regular backups of all data in case of loss. Has your MySQL database has been lost, and you’re scrambling to restore a copy from your last backup? In this tutorial, we present two easy ways to back up and restore your MySQL Database. Prerequisites A Linux operating system MySQL installed &#8230; <a href="/back-up-and-restore-a-mysql-database-easy-tutorial/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/back-up-and-restore-a-mysql-database-easy-tutorial/">How to Back Up and Restore a MySQL Database : Easy Tutorial</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>It is essential to important to make regular backups of all data in case of loss. Has your MySQL database has been lost, and you’re scrambling to restore a copy from your last backup?</p>
+<p><strong>In this tutorial, we present two easy ways to back up and restore your MySQL Database.</strong></p>
+<p><img decoding="async" class="aligncenter size-full wp-image-486" src="/wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases.png" alt="how-to-back-up-and-restore-mysql-databases" width="800" height="400" srcset="/wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases.png 800w, /wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases-300x150.png 300w, /wp-content/uploads/2021/05/how-to-back-up-and-restore-mysql-databases-768x384.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p class="h3">Prerequisites</p>
+<ul>
+<li>A Linux operating system</li>
+<li>MySQL installed</li>
+<li>An existing database</li>
+<li>Mysqldump utility (should be included with your MySQL software)</li>
+</ul>
+<h2 id="ftoc-heading-1" class="ftwp-heading">Back Up from the Command-Line with mysqldump</h2>
+<p>The <strong>mysqldump client utility</strong> can dump a database including the SQL statements required to rebuild the database.</p>
+<p>By default, the dump file includes the SQL commands to restore the tables and data.</p>
+<p>To back up your MySQL database, the general syntax is:</p>
+<pre class="wp-block-code"><code>sudo mysqldump -u [user] -p [database_name] &gt; [filename].sql</code></pre>
+<ul>
+<li>Replace [<strong>user</strong>] with your username and password (if needed).</li>
+<li>The [<strong>database_name</strong>] is the path and filename of the database.</li>
+<li>The <strong>&gt; </strong>command specifies the output.</li>
+<li>[<strong>filename</strong>] is the path and filename you want to save the dump file as.</li>
+</ul>
+<p>Other examples:</p>
+<p>To back up of an entire Database Management System:</p>
+<pre class="wp-block-code"><code>mysqldump --all-databases --single-transaction --quick --lock-tables=false &gt; full-backup-$(date +%F).sql -u root -p</code></pre>
+<p>To include more than one database in the backup dump file:</p>
+<pre class="wp-block-code"><code>sudo mysqldump -u [user] -p [database_1] [database_2] [database_etc] &gt; [filename].sql</code></pre>
+<h2 id="ftoc-heading-2" class="ftwp-heading">How to Restore MySQL with mysqldump</h2>
+<h3 id="ftoc-heading-3" class="ftwp-heading">Step 1: Create New Database</h3>
+<p>On the system that hosts the database, use MySQL to create a new database.</p>
+<p>Make sure you’ve named it the same as the database you lost. This creates the foundation file that mysqldump will import the data into. Since the dump file has the commands to rebuild the database, you only need to create the empty database.</p>
+<h3 id="ftoc-heading-4" class="ftwp-heading">Step 2: Restore MySQL Dump</h3>
+<p>To restore a MySQL backup, enter:</p>
+<pre class="wp-block-code"><code>mysql -u [user] -p [database_name] &lt; [filename].sql</code></pre>
+<p>Make sure to include <strong>[database_name]</strong> and <strong>[filename</strong>] in the path.</p>
+<p>It’s likely that on the host machine, <strong>[database_name]</strong> can be in a root directory, so you may not need to add the path. Make sure that you specify the exact path for the dump file you’re restoring, including server name (if needed).</p>
+<h2 id="ftoc-heading-5" class="ftwp-heading">Using phpMyAdmin to Back Up or Restore MySQL</h2>
+<p>If you’re running phpMyAdmin backing up and <strong>restoring your MySQL database </strong>is simple.</p>
+<p>The <strong>export </strong>function is used as a backup, and the <strong>import </strong>function is used to restore.</p>
+<h3 id="ftoc-heading-6" class="ftwp-heading">Step 1: Create a MySQL Database Backup</h3>
+<p>1. Open phpMyAdmin. On the directory tree on the left, click the database you want to back up.</p>
+<p>This should open the directory structure in the right-hand window. You’ll also notice that, in the directory tree on the left, all the assets under the main database are highlighted.</p>
+<p>2. Click <strong>Export </strong>on the menu across the top of the display.</p>
+<p>You’ll see a section called “Export Method.” Use <strong>Quick </strong>to save a copy of the whole database. Choose <strong>Custom </strong>to select individual tables or other special options.</p>
+<p>Leave the <strong>Format </strong>field set to <strong>SQL, </strong>unless you have a good reason to change it.</p>
+<p>3. Click <strong>Go.</strong> If you select <strong>Quick, </strong>your web browser will download a copy of the database into your specified downloads folder. You can copy that to a safe location.</p>
+<h3 id="ftoc-heading-7" class="ftwp-heading">Step 2: Clear the Old Database Information</h3>
+<p>It’s important to clear out old data before restoring a backup. If there’s any old data, it isn’t overwritten when you restore. This can create duplicate tables, causing errors and conflicts.</p>
+<p>1. Open phpMyAdmin, on the navigation pane on the left, choose the database you want to restore.</p>
+<p>2. Click the <strong>check all </strong>box near the bottom. Then, use the drop-down menu labeled <strong>With selected </strong>to select <strong>Drop.</strong></p>
+<p>3. The tool should prompt you to confirm that you want to go forward. Click <strong>yes.</strong></p>
+<p>This will get rid of all the existing data, clearing the way for your restoration.</p>
+<h3 id="ftoc-heading-8" class="ftwp-heading">Step 3: Restore Your Backed up MySQL Database</h3>
+<p>In phpMyAdmin, the <strong>Import </strong>tool is used to restore a database.</p>
+<p>1. On the menu across the top, click <strong>Import</strong>.</p>
+<p>2. The first section is labeled <strong>File to import.</strong> A couple of lines down, there’s a line that starts with “Browse your computer,” with a button labeled <strong>Choose File. </strong>Click that button.</p>
+<p>3. Use the dialog box to navigate to the location where you’ve saved the export file that you want to restore. Leave all the options set to default. (If you created your backup with different options, you can select those here.)</p>
+<p>4. Click <strong>Go.</strong></p>
+<p>Also read : <a href="/install-linux-nginx-mysql-php-lemp-stack-on-ubuntu-20-04/">How To Install Linux, Nginx, MySQL, PHP (LEMP stack) on Ubuntu</a></p>
+<p>The post <a rel="nofollow" href="/back-up-and-restore-a-mysql-database-easy-tutorial/">How to Back Up and Restore a MySQL Database : Easy Tutorial</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

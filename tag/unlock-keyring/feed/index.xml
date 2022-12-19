@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>unlock keyring Archives - How To Do Stuff</title>
+	<atom:link href="/tag/unlock-keyring/feed/" rel="self" type="application/rss+xml" />
+	<link>/tag/unlock-keyring/</link>
+	<description>How To Do Tips and Tricks - How stuff works</description>
+	<lastBuildDate>Mon, 28 Nov 2022 12:07:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2021/06/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>unlock keyring Archives - How To Do Stuff</title>
+	<link>/tag/unlock-keyring/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to disable keyring password in Ubuntu 20.04 / Ubuntu 18.04</title>
+		<link>/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2021 10:20:15 +0000</pubDate>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Help]]></category>
+		<category><![CDATA[Ubuntu Linux]]></category>
+		<category><![CDATA[an application wants access to the keyring ubuntu 20.04]]></category>
+		<category><![CDATA[default keyring ubuntu disable]]></category>
+		<category><![CDATA[disable default keyring ubuntu]]></category>
+		<category><![CDATA[Disable keyring]]></category>
+		<category><![CDATA[Disable keyring ubuntu]]></category>
+		<category><![CDATA[disable login keyring]]></category>
+		<category><![CDATA[disable password ubuntu 20.04]]></category>
+		<category><![CDATA[disable reyring password]]></category>
+		<category><![CDATA[gnome keyring auto unlock]]></category>
+		<category><![CDATA[gnome keyring disable]]></category>
+		<category><![CDATA[gnome keyring remove password]]></category>
+		<category><![CDATA[how to disable keyring in ubuntu 20.04]]></category>
+		<category><![CDATA[Password and Keys]]></category>
+		<category><![CDATA[remove default keyring ubuntu 20.04]]></category>
+		<category><![CDATA[remove keyring]]></category>
+		<category><![CDATA[remove keyring password ubuntu]]></category>
+		<category><![CDATA[remove keyring ubuntu]]></category>
+		<category><![CDATA[remove keyring ubuntu 20.04]]></category>
+		<category><![CDATA[Ubuntu 18.04 disable keyring]]></category>
+		<category><![CDATA[Ubuntu 20.04 disable keyring]]></category>
+		<category><![CDATA[ubuntu auto unlock keyring]]></category>
+		<category><![CDATA[ubuntu disable default keyring]]></category>
+		<category><![CDATA[Ubuntu disable keyring]]></category>
+		<category><![CDATA[ubuntu disable login keyring]]></category>
+		<category><![CDATA[Ubuntu keyring]]></category>
+		<category><![CDATA[ubuntu keyring password disable]]></category>
+		<category><![CDATA[ubuntu turn off keyring]]></category>
+		<category><![CDATA[unlock keyring]]></category>
+		<category><![CDATA[unlock login keyring ubuntu 20.04]]></category>
+		<guid isPermaLink="false">/?p=194</guid>
+
+					<description><![CDATA[<p>Disable/Remove keyring password in Ubuntu 20.04 or Ubuntu 18.04 In cases where you want to use automatic login but don’t want to unlock keyring manually, you may choose to disable the keyring with a workaround. Keep in mind that you are disabling a security feature so think twice before doing so. Gnome keyring auto unlock &#8230; <a href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to disable keyring password in Ubuntu 20.04 / Ubuntu 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2><img decoding="async" class="aligncenter wp-image-345 size-full" src="/wp-content/uploads/2021/04/Disable-Keyring-ubuntu.jpg" alt="Disable keyring password in ubuntu" width="864" height="500" srcset="/wp-content/uploads/2021/04/Disable-Keyring-ubuntu.jpg 864w, /wp-content/uploads/2021/04/Disable-Keyring-ubuntu-300x174.jpg 300w, /wp-content/uploads/2021/04/Disable-Keyring-ubuntu-768x444.jpg 768w" sizes="(max-width: 864px) 100vw, 864px" /></h2>
+<h2>Disable/Remove keyring password in Ubuntu 20.04 or Ubuntu 18.04</h2>
+<p>In cases where you want to use automatic login but don’t want to unlock keyring manually, you may choose to <a href="/tag/disable-keyring/">disable the keyring</a> with a workaround. Keep in mind that you are disabling a security feature so think twice before doing so.<br />
+<!-- my ad1 --><br />
+<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-3868416474486216" data-ad-slot="9405644746" data-ad-format="auto" data-full-width-responsive="true"></ins><br />
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+<h3>Gnome keyring auto unlock</h3>
+<p>The process is similar to <a href="/change-keyring-password-in-ubuntu/">changing keyring password</a>. Open Password and Keys application and go on to change the keyring password.</p>
+<p>The trick is that when it asks to change the password, don’t enter a new password and hit Continue instead. This will remove any password from the keyring.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-195" src="/wp-content/uploads/2021/04/disable-keyring-password-ubuntu.png" alt="" width="800" height="500" srcset="/wp-content/uploads/2021/04/disable-keyring-password-ubuntu.png 800w, /wp-content/uploads/2021/04/disable-keyring-password-ubuntu-300x188.png 300w, /wp-content/uploads/2021/04/disable-keyring-password-ubuntu-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<figure class="wp-block-image size-large"><figcaption>Disable Keyring password by not setting any password at all</figcaption></figure>
+<p>This way, the keyring will have no password and it remains unlocked all the time.</p>
+<p>Also read : <a href="/use-ubuntu-keyring/" target="_blank" rel="noopener">How to Use Keyring in Ubuntu</a></p>
+<p>The post <a rel="nofollow" href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to disable keyring password in Ubuntu 20.04 / Ubuntu 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How to Change keyring password in Ubuntu 20.04 / 18.04</title>
+		<link>/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=change-keyring-password-in-ubuntu-20-04-ubuntu-18-04</link>
+		
+		<dc:creator><![CDATA[Expert]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2021 10:12:47 +0000</pubDate>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[Ubuntu Help]]></category>
+		<category><![CDATA[Ubuntu Linux]]></category>
+		<category><![CDATA[change default keyring password ubuntu]]></category>
+		<category><![CDATA[change gnome keyring password]]></category>
+		<category><![CDATA[Change keyring]]></category>
+		<category><![CDATA[change keyring password]]></category>
+		<category><![CDATA[change keyring password command line]]></category>
+		<category><![CDATA[change keyring password ubuntu 18.04]]></category>
+		<category><![CDATA[change keyring password ubuntu 20.04]]></category>
+		<category><![CDATA[change login keyring password ubuntu]]></category>
+		<category><![CDATA[change ubuntu keyring password]]></category>
+		<category><![CDATA[forgot keyring password ubuntu]]></category>
+		<category><![CDATA[how to change password on ubuntu 20.04]]></category>
+		<category><![CDATA[keyring]]></category>
+		<category><![CDATA[keyring password]]></category>
+		<category><![CDATA[linux change keyring password]]></category>
+		<category><![CDATA[Passwords and keys]]></category>
+		<category><![CDATA[Ubuntu 18.04 change keyring]]></category>
+		<category><![CDATA[Ubuntu 20.04 change keyring]]></category>
+		<category><![CDATA[ubuntu 20.04 change keyring password]]></category>
+		<category><![CDATA[ubuntu change keyring password]]></category>
+		<category><![CDATA[ubuntu forgot keyring password]]></category>
+		<category><![CDATA[ubuntu keyring change password]]></category>
+		<category><![CDATA[ubuntu keyring password change]]></category>
+		<category><![CDATA[ubuntu reset keyring password]]></category>
+		<category><![CDATA[ubuntu update keyring password]]></category>
+		<category><![CDATA[unlock keyring]]></category>
+		<guid isPermaLink="false">/?p=185</guid>
+
+					<description><![CDATA[<p>Change keyring password in Ubuntu / Debian Suppose you changed your account password. Now when you login, your system tries to unlock the keyring automatically using the new login password. But the keyring still uses the old login password. In such a case, you can change the keyring password to the new login password so &#8230; <a href="/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">Continue reading <span class="meta-nav">&#8594;</span></a></p>
+<p>The post <a rel="nofollow" href="/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to Change keyring password in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<h2><img decoding="async" class="aligncenter size-large wp-image-672" src="/wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-1024x306.png" alt="how to change keyring password ubuntu" width="600" height="179" srcset="/wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-1024x306.png 1024w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-300x90.png 300w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-768x229.png 768w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu-640x191.png 640w, /wp-content/uploads/2021/04/how-to-change-keyring-password-ubuntu.png 1091w" sizes="(max-width: 600px) 100vw, 600px" />Change keyring password in Ubuntu / Debian</h2>
+<p>Suppose you changed your account password. Now when you login, your system tries to unlock the <a href="/tag/keyring/">keyring</a> automatically using the new login password. But the keyring still uses the old login password.</p>
+<p>In such a case, you can <a href="/tag/ubuntu-change-keyring-password/">change the keyring password</a> to the new login password so that the keyring gets unlocked automatically as soon as you login to your system.</p>
+<h3>Keyring password change &#8211; Steps for Ubuntu / Debian based systems</h3>
+<p>Open the Password and Keys application from the menu:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-186" src="/wp-content/uploads/2021/04/password-and-keys-app-ubuntu.jpg" alt="" width="800" height="220" srcset="/wp-content/uploads/2021/04/password-and-keys-app-ubuntu.jpg 800w, /wp-content/uploads/2021/04/password-and-keys-app-ubuntu-300x83.jpg 300w, /wp-content/uploads/2021/04/password-and-keys-app-ubuntu-768x211.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Look for Password and Keys app in the menu</p>
+<p>Now, right click on the Login keyring and click on Change Password:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-187" src="/wp-content/uploads/2021/04/change-keyring-password.png" alt="" width="800" height="500" srcset="/wp-content/uploads/2021/04/change-keyring-password.png 800w, /wp-content/uploads/2021/04/change-keyring-password-300x188.png 300w, /wp-content/uploads/2021/04/change-keyring-password-768x480.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Change Keyring Password<br />
+<strong>What if you don’t remember the old login password?</strong></p>
+<p>You probably know that it is easy to reset forgotten password in <a href="/category/ubuntu/">Ubuntu</a>. The problem comes with the keyring in such cases. You changed the account password but you don’t remember the old account password that is still used by the keyring.</p>
+<p>Now you cannot change it because you don’t know the old password. What to do now?</p>
+<p>In such a case, you’ll have to remove the entire keyring itself. You can do that from the Passwords and Keys application:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-188" src="/wp-content/uploads/2021/04/delete-keyring-ubuntu.jpg" alt="" width="800" height="500" srcset="/wp-content/uploads/2021/04/delete-keyring-ubuntu.jpg 800w, /wp-content/uploads/2021/04/delete-keyring-ubuntu-300x188.jpg 300w, /wp-content/uploads/2021/04/delete-keyring-ubuntu-768x480.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>It will ask for your confirmation:</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-189" src="/wp-content/uploads/2021/04/delete-keyring.jpg" alt="" width="629" height="198" srcset="/wp-content/uploads/2021/04/delete-keyring.jpg 629w, /wp-content/uploads/2021/04/delete-keyring-300x94.jpg 300w" sizes="(max-width: 629px) 100vw, 629px" /></p>
+<p>Alternatively, you may also manually delete the keyring files in ~/.local/share/keyrings directory.</p>
+<p>When the old keyring is removed and you try to use Chrome/Chromium, it will ask you to create new keyring.</p>
+<p><img decoding="async" class="aligncenter size-full wp-image-190" src="/wp-content/uploads/2021/04/new-keyring-password.jpg" alt="" width="800" height="350" srcset="/wp-content/uploads/2021/04/new-keyring-password.jpg 800w, /wp-content/uploads/2021/04/new-keyring-password-300x131.jpg 300w, /wp-content/uploads/2021/04/new-keyring-password-768x336.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>You can use the new login password so that the keyring gets unlocked automatically.</p>
+<p>&nbsp;</p>
+<p>Also read:</p>
+<p><a href="/disable-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to disable keyring password in Ubuntu</a></p>
+<p>The post <a rel="nofollow" href="/change-keyring-password-in-ubuntu-20-04-ubuntu-18-04/">How to Change keyring password in Ubuntu 20.04 / 18.04</a> appeared first on <a rel="nofollow" href="/">How To Do Stuff</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
